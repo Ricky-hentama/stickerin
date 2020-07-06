@@ -173,18 +173,27 @@ nav {
 
 /* section 2 */
 #news {
-    height: 400px;
+    height: 500px;
     background: #F3F3F3 0% 0% no-repeat padding-box;
-
-    padding: 80px 0px;
+    padding: 30px 0px;
+    text-align: center;
 }
 
+#news h1 {
+    margin-bottom: 30px;
+}
+
+
 .cards {
+
     margin: 0px auto;
     width: 1100px;
     border: 1px solid red;
-    height: 280px;
-
+    height: 300px;
 }
 
-/* mbuh */
+/* footer */
+footer {
+    height: 170px;
+    background: #E6E6E6 0% 0% no-repeat padding-box;
+}
