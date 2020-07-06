@@ -199,11 +199,16 @@ nav {
 
 
 h5 {
-    font-size: 1rem;
-    line-height: 1.375;
-    font-family: Rubik, Arial, sans-serif;
-    font-weight: 500;
-    color: #030929;
+
+
+
+
+
+    text-align: left;
+    font: Medium 18px/24px Roboto;
+    letter-spacing: 0.9px;
+    color: #5D5D5D;
+    opacity: 1;
 }
 
 
@@ -214,4 +219,10 @@ a:hover {
 
 footer {
     background: #ebf4fa;
+}
+
+footer .row {
+    width: 1100px;
+    margin: 0px auto;
+    padding: 40px 0px;
 }
