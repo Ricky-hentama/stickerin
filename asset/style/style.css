@@ -95,14 +95,15 @@ nav {
 
 .container {
     margin-top: 20px;
-    width: 1100px;
-    border: 1px solid red;
+    /* 
+    border: 1px solid red; */
     padding: 0px 0px;
 }
 
+/* 
 .row {
     border: 1px solid blue;
-}
+} */
 
 
 .tombol-branding {
@@ -128,6 +129,7 @@ nav {
 .branding-area {
     height: 400px;
     margin-top: 30px;
+    padding-left: 10px;
 }
 
 .branding-area h1 {
@@ -183,7 +185,20 @@ nav {
     margin-bottom: 30px;
 }
 
+/* slider */
 
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #707070;
+    border-radius: 25px;
+}
+
+.carousel-indicators li.active {
+    background-color: #0A9AD3;
+}
+
+/* card */
 .cards {
 
     margin: 0px auto;
@@ -218,11 +233,20 @@ a:hover {
 }
 
 footer {
-    background: #ebf4fa;
+    background: #E6E6E6 0% 0% no-repeat padding-box;
 }
 
 footer .row {
-    width: 1100px;
+    width: 1300px;
     margin: 0px auto;
     padding: 40px 0px;
+}
+
+footer a {
+    text-align: left;
+    font-size: 15px;
+
+    letter-spacing: 0.2px;
+    color: #5D5D5D;
+    opacity: 1;
 }
