@@ -353,11 +353,16 @@ HALAMAN INDEX end
 }
 
 #pagination {
-    text-align: end;
+
     margin-top: 65px;
     margin-bottom: 100px;
-    margin-right: 50%;
-    margin-left: 50%;
+}
+
+
+.pg-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* section 1 end */
