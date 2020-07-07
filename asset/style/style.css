@@ -202,14 +202,12 @@ nav {
 
     margin: 0px auto;
     max-width: 1100px;
-
+    border: #0A9AD3 1px solid;
     height: 400px;
 }
 
 .cards .col-md-3 {
     padding: 0px 5px;
-
-
 }
 
 .card {
