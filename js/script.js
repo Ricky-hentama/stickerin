@@ -5,8 +5,7 @@ $(document).ready(function () {
     })
 
     // toggle class branding button
-    $('.tombol-branding').click(function (e) {
-        console.log(e);
-        $(this).toggleClass('tombol-active')
+    $('.tombol-branding').click(function () {
+        $(this).addClass('tombol-active').siblings().removeClass('tombol-active');
     });
 });

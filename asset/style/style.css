@@ -83,7 +83,6 @@ a {
     background-color: #FFFFFF;
 }
 
-
 .tombol-active {
     background-color: #0A9AD3;
     color: white;
@@ -344,7 +343,22 @@ HALAMAN INDEX end
 }
 
 /* portfilio img */
-. portfolio-img {}
+.portfolio-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 360px;
+    height: 260px;
+    background: #0A9AD3 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+}
+
+#pagination {
+    text-align: end;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    margin-right: 50%;
+    margin-left: 50%;
+}
 
 /* section 1 end */
 /* 
