@@ -55,7 +55,7 @@ a {
 
 /* section 1 */
 #branding {
-    height: 550px;
+    height: 600px;
 
 
 }
@@ -317,7 +317,35 @@ HALAMAN INDEX end
     opacity: 1;
 }
 
-div
+
+/* section 1 end */
+/* 
+*
+*
+*
+*
+ HALAMAN BRANDING MOBIL end
+*
+*
+*
+*
+*/
+
+
+
+
+
+/* HALAMAN PORTFOLIO */
+/* section 1 */
+#portfolio-title {
+    font: Semibold 50px/68px Open Sans;
+    letter-spacing: 2.5px;
+    margin-bottom: 30px;
+}
+
+/* portfilio img */
+. portfolio-img {}
+
 /* section 1 end */
 /* 
 *

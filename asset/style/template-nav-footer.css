@@ -35,6 +35,10 @@ nav {
 }
 
 /* breadcrumb */
+div>.breadcrumb {
+    margin-top: 70px;
+}
+
 .breadcrumb {
     background-color: white;
     padding-left: 0px;
