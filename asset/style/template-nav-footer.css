@@ -15,7 +15,7 @@ nav {
 }
 
 .telp {
-    margin-left: 70px;
+    margin-left: 40px;
     color: #5D5D5D;
 
 }
@@ -37,6 +37,7 @@ nav {
 /* breadcrumb */
 .breadcrumb {
     background-color: white;
+    padding-left: 0px;
 }
 
 /* footer */

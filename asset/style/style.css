@@ -218,6 +218,31 @@ HALAMAN INDEX end
 /* HALAMAN TENTANG kAMI */
 
 
+/* section 1 */
+
+
+.aboutme-img {
+    max-width: 470px;
+    height: 300px;
+    background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
+    background: #0A9AD3 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+}
+
+.ads-title {
+    font: Medium 40px/30px Roboto;
+    letter-spacing: 2px;
+    color: #3D3D3D;
+}
+
+.ads-text {
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #3D3D3D;
+}
+
+/* section 1 end */
 
 /* 
 *
