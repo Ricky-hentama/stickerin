@@ -242,8 +242,44 @@ HALAMAN INDEX end
     color: #3D3D3D;
 }
 
+#sticker-ads2 {
+    margin-top: 100px;
+}
+
 /* section 1 end */
 
+/* section 2 */
+#proses-kerja {
+    margin-top: 100px;
+    margin-bottom: 160px;
+}
+
+.proses-title {
+    text-align: left;
+    font: Medium 45px/30px Roboto;
+    letter-spacing: 2.25px;
+    color: #3D3D3D;
+    opacity: 1;
+}
+
+.proses-img {
+    max-width: 235px;
+    min-height: 255px;
+    background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
+    background: #0A9AD3 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+
+}
+
+.asu {
+    max-width: 287px;
+    max-width: 255px;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+/* section 2 end */
 /* 
 *
 *
