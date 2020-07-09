@@ -4,6 +4,14 @@ a {
     color: #5D5D5D;
 }
 
+/* help */
+#help {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+}
+
 /* carousel */
 
 #carouselExampleControls {
