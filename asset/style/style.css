@@ -403,8 +403,8 @@ HALAMAN INDEX end
 }
 
 .tombol-kirim {
-    width: 150px;
-    height: 32px;
+    width: 200px;
+    height: 39px;
     background-color: #0D78C4;
     color: white;
     border-radius: 20px;
@@ -421,9 +421,6 @@ HALAMAN INDEX end
     width: 80%;
 }
 
-.custom-file-input {
-    width: 50px;
-}
 
 /* section 1 end */
 /* 
