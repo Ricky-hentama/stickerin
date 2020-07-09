@@ -276,8 +276,9 @@ HALAMAN INDEX end
     background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
     background: #0A9AD3 0% 0% no-repeat padding-box;
     border-radius: 20px;
-
 }
+
+
 
 #mobil-img-3 {
     margin-bottom: 300px;
@@ -387,7 +388,7 @@ HALAMAN INDEX end
 *
 */
 
-/* HALAMAN KONTAK / TANYA*/
+/* HALAMAN KONTAK */
 /* section 1 */
 
 /* kontak kiri */
@@ -442,3 +443,47 @@ HALAMAN INDEX end
 *
 *
 */
+
+/* under 1300px */
+@media (max-width: 1300px) {
+
+    /* portfolio */
+    .portfolio-img {
+        width: 328px;
+        height: 234px;
+        margin: 20px auto;
+    }
+
+
+}
+
+/* under 1000px */
+@media (max-width: 1000px) {
+
+    /* portfolio */
+    .portfolio-img {
+        width: 272px;
+        height: 198px;
+        margin: 20px auto;
+    }
+
+
+}
+
+/* under 430px */
+@media (max-width: 430px) {
+
+    /* portfolio */
+    .portfolio-img {
+        width: 292px;
+        height: 208px;
+        margin: 20px auto;
+    }
+
+    /* tentang kami */
+    .proses-img {
+        margin: 0px auto;
+        max-width: 235px;
+        height: 150px;
+    }
+}
