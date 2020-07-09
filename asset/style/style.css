@@ -353,12 +353,15 @@ HALAMAN INDEX end
 }
 
 #pagination {
+
     margin-top: 65px;
     margin-bottom: 100px;
 }
 
-.pg-blue {
 
+
+.pg-blue {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -370,6 +373,21 @@ HALAMAN INDEX end
 *
 *
  HALAMAN BRANDING MOBIL end
+*
+*
+*
+*
+*/
+
+/* HALAMAN FAQ / TANYA*/
+
+
+/* 
+*
+*
+*
+*
+ HALAMAN FAQ end
 *
 *
 *
