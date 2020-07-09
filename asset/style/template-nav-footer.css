@@ -1,7 +1,7 @@
 /* navbar */
 nav {
-    height: 61px;
-    line-height: 51px;
+    /*height: 61px;*/
+    /*line-height: 51px;*/
     position: fixed;
 
 }
@@ -36,7 +36,7 @@ nav {
 
 /* breadcrumb */
 div>.breadcrumb {
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .breadcrumb {
