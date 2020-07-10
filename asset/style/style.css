@@ -26,7 +26,10 @@ a {
   height: 600px;
   text-align: center;
 }
-
+.carousel-img {
+  width: 1080px;
+  height: 465px;
+}
 .dua {
   background-color: coral;
 }
@@ -554,6 +557,19 @@ HALAMAN INDEX end
   /* tentang kami */
   .proses-img {
     margin: 10px auto;
+  }
+
+  /* index */
+  .carousel-img {
+    width: 432px;
+    height: 186px;
+    margin-top: 40px;
+  }
+  .slide-item {
+    height: 400px;
+  }
+  .rectangle {
+    margin-top: 70px;
   }
 }
 
