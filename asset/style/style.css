@@ -440,11 +440,11 @@ HALAMAN INDEX end
 .accordion-section .panel-default .panel-title a:after {
   font-family: "FontAwesome";
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   content: "\f106";
   color: #1f7de2;
   float: right;
-  margin-top: -12px;
+  margin-top: -16px;
 }
 
 .accordion-section .panel-default .panel-title a.collapsed:after {
@@ -471,13 +471,15 @@ HALAMAN INDEX end
 }
 
 .faq-img {
-  width: 439px;
+  max-width: 439px;
   height: 246px;
   background: #1A7FC7 0% 0% no-repeat padding-box;
   border: 1px solid #0E78C4;
-  opacity: 1;
-
+  margin: 40px auto;
+  margin-bottom: 80px;
 }
+
+
 
 /*
 *
