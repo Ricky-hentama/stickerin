@@ -26,10 +26,12 @@ a {
   height: 600px;
   text-align: center;
 }
+
 .carousel-img {
   width: 1080px;
   height: 465px;
 }
+
 .dua {
   background-color: coral;
 }
@@ -66,7 +68,7 @@ a {
 
 /* section 1 */
 #branding {
-  height: 600px;
+  margin-bottom: 100px;
 }
 
 .container {
@@ -91,6 +93,7 @@ a {
   margin: 0px 10px;
   background-color: #ffffff;
 }
+
 .tombol-branding:focus {
   outline: none;
 }
@@ -101,7 +104,7 @@ a {
 }
 
 .branding-area {
-  height: 400px;
+
   margin-top: 30px;
 }
 
@@ -117,6 +120,7 @@ a {
 }
 
 .branding-lanjut {
+  margin-top: 30px;
   width: 270px;
   height: 50px;
   background: #ebebeb 0% 0% no-repeat padding-box;
@@ -125,10 +129,7 @@ a {
   border: none;
 }
 
-.brand-imgs {
-  padding-top: -100px;
-  padding: 0px 0px;
-}
+
 
 .branding-img {
   width: 185px;
@@ -403,9 +404,11 @@ HALAMAN INDEX end
   border: none;
   margin: 30px 0;
 }
+
 .tombol-kirim:focus {
   outline: none;
 }
+
 /* kontak kanan */
 .form-control {
   width: 270px;
@@ -430,7 +433,7 @@ HALAMAN INDEX end
 
 /* HALAMAN FAQ */
 
-.accordion-section .panel-default > .panel-heading {
+.accordion-section .panel-default>.panel-heading {
   border-radius: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 3px #8a8a8a29;
@@ -499,6 +502,7 @@ HALAMAN INDEX end
 
 /* under 1300px */
 @media (max-width: 1300px) {
+
   /* portfolio */
   .portfolio-img {
     width: 328px;
@@ -509,20 +513,29 @@ HALAMAN INDEX end
 
 /* under 1000px */
 @media (max-width: 1000px) {
+
   /* portfolio */
   .portfolio-img {
     width: 272px;
     height: 198px;
     margin: 20px auto;
   }
+
   /* tentang kami */
   .aboutme-img {
     margin: 10px auto;
   }
+
   .proses-img {
     margin: 10px auto;
   }
-  /* branding */
+
+  /* index */
+  .branding-img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px;
+  }
 
   /* ALL */
   .tombol-branding {
@@ -532,21 +545,38 @@ HALAMAN INDEX end
 
 /* under 750px ================*/
 @media (max-width: 750px) {
+
   /* brand mobil */
   .brand-mobil-img {
     max-width: 342px;
     height: 198px;
     margin: 10px auto;
   }
+
   .brand-mobil-text,
   .brand-mobil-title,
   .brand-mobil-img {
     margin: 10px 30px;
   }
+
+  /* index */
+  .branding-img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px;
+  }
+
+  .brand-imgs {
+    padding: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* under 430px */
 @media (max-width: 430px) {
+
   /* portfolio */
   .portfolio-img {
     width: 292px;
@@ -565,11 +595,23 @@ HALAMAN INDEX end
     height: 186px;
     margin-top: 40px;
   }
+
   .slide-item {
     height: 400px;
   }
+
   .rectangle {
     margin-top: 70px;
+  }
+
+  .branding-img {
+    width: 100px;
+    height: 100px;
+    margin: 2px 2px;
+  }
+
+  .brand-imgs {
+    padding: 0px auto;
   }
 }
 
