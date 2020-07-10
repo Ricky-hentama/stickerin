@@ -1,79 +1,77 @@
 /*  HALAMAN INDEX  */
 a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #5D5D5D;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #5d5d5d;
 }
 
 /* help */
 #help {
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-    z-index: 99999;
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
 }
 
 /* carousel */
 
 #carouselExampleControls {
-    margin-top: 61px;
+  margin-top: 61px;
 }
 
 .slide-item {
-    width: 100%;
-    background: #0A9AD3;
-    height: 600px;
-    text-align: center;
+  width: 100%;
+  background: #0a9ad3;
+  height: 600px;
+  text-align: center;
 }
 
 .dua {
-    background-color: coral;
+  background-color: coral;
 }
 
 .rectangle {
-    cursor: pointer;
-    width: 285px;
-    height: 47px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 20px;
+  cursor: pointer;
+  width: 285px;
+  height: 47px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
 
-    margin: 0px auto;
-    margin-top: 50px;
-    position: relative;
-
+  margin: 0px auto;
+  margin-top: 50px;
+  position: relative;
 }
 
 .rectangle p {
-    font: Regular 16px/20px PT Sans;
-    letter-spacing: 0.48px;
-    font-size: 16px;
-    color: #5D5D5D;
-    text-transform: uppercase;
-    padding-top: 10px;
+  font: Regular 16px/20px PT Sans;
+  letter-spacing: 0.48px;
+  font-size: 16px;
+  color: #5d5d5d;
+  text-transform: uppercase;
+  padding-top: 10px;
 }
 
 .polygon {
-    width: 0;
-    height: 0;
-    border-left: 26px solid transparent;
-    border-right: 26px solid transparent;
-    margin: 8px auto;
-    border-top: 18px solid #FFFFFF;
-
+  width: 0;
+  height: 0;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  margin: 8px auto;
+  border-top: 18px solid #ffffff;
 }
 
 /* section 1 */
 #branding {
-    height: 600px;
-
-
+  height: 600px;
 }
 
 .container {
-    margin-top: 20px;
-    /* 
+  margin-top: 20px;
+  /* 
     border: 1px solid red; */
-    padding: 0px 10px;
-    max-width: 1140px;
+  padding: 0px 10px;
+  max-width: 1140px;
 }
 
 /* 
@@ -81,132 +79,122 @@ a {
     border: 1px solid blue;
 } */
 
-
 .tombol-branding {
-    height: 45px;
-    width: 210px;
-    border: 1px solid #707070;
-    border-radius: 10px;
-    margin: 0px 10px;
-    background-color: #FFFFFF;
+  height: 45px;
+  width: 210px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  margin: 0px 10px;
+  background-color: #ffffff;
 }
 
 .tombol-active {
-    background-color: #0A9AD3;
-    color: white;
+  background-color: #0a9ad3;
+  color: white;
 }
 
 .branding-area {
-    height: 400px;
-    margin-top: 30px;
-
+  height: 400px;
+  margin-top: 30px;
 }
 
 .branding-area h1 {
-    font: Semibold 50px/68px Open Sans;
-    letter-spacing: 1.55px;
+  font: Semibold 50px/68px Open Sans;
+  letter-spacing: 1.55px;
 }
 
 .branding-area p {
-    font: Regular 25px/34px Open Sans;
-    letter-spacing: 0.78px;
-    color: #5D5D5D;
+  font: Regular 25px/34px Open Sans;
+  letter-spacing: 0.78px;
+  color: #5d5d5d;
 }
 
 .branding-lanjut {
-    width: 270px;
-    height: 50px;
-    background: #EBEBEB 0% 0% no-repeat padding-box;
-    border-radius: 20px;
-    opacity: 1;
-    border: none;
-
+  width: 270px;
+  height: 50px;
+  background: #ebebeb 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  opacity: 1;
+  border: none;
 }
 
 .brand-imgs {
-    padding-top: -100px;
-    padding: 0px 0px;
-
-
+  padding-top: -100px;
+  padding: 0px 0px;
 }
 
 .branding-img {
-
-    width: 185px;
-    height: 185px;
-    background-color: cornflowerblue;
-    float: right;
-    margin: 10px 10px;
-    background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
-    background: #0A9AD3 0% 0% no-repeat padding-box;
-    border-radius: 10px;
-    opacity: 1;
+  width: 185px;
+  height: 185px;
+  background-color: cornflowerblue;
+  float: right;
+  margin: 10px 10px;
+  background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
+  background: #0a9ad3 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
 }
 
 /* section 1 end */
 
 /* section 2 */
 #news {
-    height: 550px;
-    background: #F3F3F3 0% 0% no-repeat padding-box;
-    padding: 30px 0px;
-    text-align: center;
+  height: 550px;
+  background: #f3f3f3 0% 0% no-repeat padding-box;
+  padding: 30px 0px;
+  text-align: center;
 }
 
 #news h1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* slider */
 
 .carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    border: 1px solid #707070;
-    border-radius: 25px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #707070;
+  border-radius: 25px;
 }
 
 .carousel-indicators li.active {
-    background-color: #0A9AD3;
+  background-color: #0a9ad3;
 }
 
 /* card */
 .cards {
-
-    margin: 0px auto;
-    max-width: 1100px;
-    height: 400px;
+  margin: 0px auto;
+  max-width: 1100px;
+  height: 400px;
 }
 
 .cards .col-md-3 {
-    padding: 0px 5px;
+  padding: 0px 5px;
 }
 
 .card {
-    text-align: left;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 30px;
-    width: 260px;
-
+  text-align: left;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 30px;
+  width: 260px;
 }
 
 .card-title {
-    font: Bold 14px/19px Nunito;
-    letter-spacing: 0px;
-    color: #393939;
-    margin-bottom: 5px;
+  font: Bold 14px/19px Nunito;
+  letter-spacing: 0px;
+  color: #393939;
+  margin-bottom: 5px;
 }
 
 .card-text {
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .card-body {
-
-    padding: 17px;
-
+  padding: 17px;
 }
 
 /* 
@@ -221,67 +209,62 @@ HALAMAN INDEX end
 *
 */
 
-
 /* HALAMAN TENTANG kAMI */
-
 
 /* section 1 */
 
-
 .aboutme-img {
-    max-width: 470px;
-    height: 300px;
-    background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
-    background: #0A9AD3 0% 0% no-repeat padding-box;
-    border-radius: 20px;
+  max-width: 470px;
+  height: 300px;
+  background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
+  background: #0a9ad3 0% 0% no-repeat padding-box;
+  border-radius: 20px;
 }
 
 .ads-title {
-    font: Medium 40px/30px Roboto;
-    letter-spacing: 2px;
-    color: #3D3D3D;
+  font: Medium 40px/30px Roboto;
+  letter-spacing: 2px;
+  color: #3d3d3d;
 }
 
 .ads-text {
-    text-align: left;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    color: #3D3D3D;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #3d3d3d;
 }
 
 #sticker-ads2 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* section 1 end */
 
 /* section 2 */
 #proses-kerja {
-    margin-top: 100px;
-    margin-bottom: 160px;
+  margin-top: 100px;
+  margin-bottom: 160px;
 }
 
 .proses-title {
-    text-align: left;
-    font: Medium 45px/30px Roboto;
-    letter-spacing: 2.25px;
-    color: #3D3D3D;
-    opacity: 1;
+  text-align: left;
+  font: Medium 45px/30px Roboto;
+  letter-spacing: 2.25px;
+  color: #3d3d3d;
+  opacity: 1;
 }
 
 .proses-img {
-    max-width: 235px;
-    min-height: 255px;
-    background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
-    background: #0A9AD3 0% 0% no-repeat padding-box;
-    border-radius: 20px;
+  max-width: 235px;
+  min-height: 255px;
+  background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
+  background: #0a9ad3 0% 0% no-repeat padding-box;
+  border-radius: 20px;
 }
 
-
-
 #mobil-img-3 {
-    margin-bottom: 300px;
+  margin-bottom: 300px;
 }
 
 /* section 2 end */
@@ -301,30 +284,29 @@ HALAMAN INDEX end
 
 /* section 1 */
 .brand-mobil-img {
-    max-width: 570px;
-    height: 330px;
-    background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
-    background: #0A9AD3 0% 0% no-repeat padding-box;
-    border-radius: 20px;
+  max-width: 570px;
+  height: 330px;
+  background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
+  background: #0a9ad3 0% 0% no-repeat padding-box;
+  border-radius: 20px;
 }
 
 .brand-mobil-title {
-    text-align: left;
-    font: Semibold 35px/47px Open Sans;
-    letter-spacing: 1.75px;
-    color: #2D2D2D;
+  text-align: left;
+  font: Semibold 35px/47px Open Sans;
+  letter-spacing: 1.75px;
+  color: #2d2d2d;
 }
 
 .brand-mobil-text {
-    margin-top: 20px;
-    text-align: left;
-    font-size: 16px;
-    font: Light 18px/24px Open Sans;
-    letter-spacing: 0.9px;
-    color: #2D2D2D;
-    opacity: 1;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  font: Light 18px/24px Open Sans;
+  letter-spacing: 0.9px;
+  color: #2d2d2d;
+  opacity: 1;
 }
-
 
 /* section 1 end */
 /* 
@@ -339,40 +321,33 @@ HALAMAN INDEX end
 *
 */
 
-
-
-
-
 /* HALAMAN PORTFOLIO */
 /* section 1 */
 #portfolio-title {
-    font: Semibold 50px/68px Open Sans;
-    letter-spacing: 2.5px;
-    margin-bottom: 30px;
+  font: Semibold 50px/68px Open Sans;
+  letter-spacing: 2.5px;
+  margin-bottom: 30px;
 }
 
 /* portfilio img */
 .portfolio-img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 360px;
-    height: 260px;
-    background: #0A9AD3 0% 0% no-repeat padding-box;
-    border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 360px;
+  height: 260px;
+  background: #0a9ad3 0% 0% no-repeat padding-box;
+  border-radius: 20px;
 }
 
 #pagination {
-
-    margin-top: 65px;
-    margin-bottom: 100px;
+  margin-top: 65px;
+  margin-bottom: 100px;
 }
 
-
-
 .pg-blue {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* section 1 end */
@@ -393,43 +368,42 @@ HALAMAN INDEX end
 
 /* kontak kiri */
 #kontak {
-    margin-bottom: 170px;
+  margin-bottom: 170px;
 }
 
 .header-kontak {
-    text-align: left;
-    font: Semibold 30px/41px Open Sans;
-    letter-spacing: 1.5px;
-    color: #5D5D5D;
-    opacity: 1;
+  text-align: left;
+  font: Semibold 30px/41px Open Sans;
+  letter-spacing: 1.5px;
+  color: #5d5d5d;
+  opacity: 1;
 }
 
 .text-kontak {
-    text-align: left;
-    font: Regular 20px/27px Open Sans;
-    letter-spacing: 1px;
-    color: #5D5D5D;
+  text-align: left;
+  font: Regular 20px/27px Open Sans;
+  letter-spacing: 1px;
+  color: #5d5d5d;
 }
 
 .tombol-kirim {
-    width: 200px;
-    height: 39px;
-    background-color: #0D78C4;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    margin: 30px 0;
+  width: 200px;
+  height: 39px;
+  background-color: #0d78c4;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  margin: 30px 0;
 }
 
 /* kontak kanan */
 .form-control {
-    width: 270px;
+  width: 270px;
 }
 
 .text-area {
-    width: 80%;
+  width: 80%;
 }
-
 
 /* section 1 end */
 /* 
@@ -444,46 +418,94 @@ HALAMAN INDEX end
 *
 */
 
+/* HALAMAN FAQ */
+
+.accordion-section .panel-default > .panel-heading {
+  border-radius: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 2px 2px 2px #8a8a8a29;
+  border: 1px solid #b5b5b5;
+  opacity: 1;
+}
+.accordion-section .panel-default .panel-title a {
+  text-align: left;
+  font: Semibold 20px/27px Open Sans;
+  letter-spacing: 1px;
+  color: #5d5d5d;
+  opacity: 1;
+}
+.accordion-section .panel-default .panel-title a:after {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-size: 3rem;
+  content: "\f106";
+  color: #1f7de2;
+  float: right;
+  margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+  content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+  border-top: none;
+  padding: 10px;
+  border-bottom: 1px solid #acacac;
+  border-right: 1px solid #acacac;
+  border-left: 1px solid #acacac;
+  opacity: 1;
+}
+.panel-body p {
+  text-align: left;
+  font: Regular 20px/27px Open Sans;
+  letter-spacing: 1px;
+  color: #5d5d5d;
+  opacity: 1;
+}
+
+/*
+*
+*
+*
+ HALAMAN FAQ end
+*
+*
+*
+*
+*/
+
 /* under 1300px */
 @media (max-width: 1300px) {
-
-    /* portfolio */
-    .portfolio-img {
-        width: 328px;
-        height: 234px;
-        margin: 20px auto;
-    }
-
-
+  /* portfolio */
+  .portfolio-img {
+    width: 328px;
+    height: 234px;
+    margin: 20px auto;
+  }
 }
 
 /* under 1000px */
 @media (max-width: 1000px) {
-
-    /* portfolio */
-    .portfolio-img {
-        width: 272px;
-        height: 198px;
-        margin: 20px auto;
-    }
-
-
+  /* portfolio */
+  .portfolio-img {
+    width: 272px;
+    height: 198px;
+    margin: 20px auto;
+  }
 }
 
 /* under 430px */
 @media (max-width: 430px) {
+  /* portfolio */
+  .portfolio-img {
+    width: 292px;
+    height: 208px;
+    margin: 20px auto;
+  }
 
-    /* portfolio */
-    .portfolio-img {
-        width: 292px;
-        height: 208px;
-        margin: 20px auto;
-    }
-
-    /* tentang kami */
-    .proses-img {
-        margin: 0px auto;
-        max-width: 235px;
-        height: 150px;
-    }
+  /* tentang kami */
+  .proses-img {
+    margin: 0px auto;
+    max-width: 235px;
+    height: 150px;
+  }
 }
