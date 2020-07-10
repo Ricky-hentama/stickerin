@@ -88,6 +88,9 @@ a {
   margin: 0px 10px;
   background-color: #ffffff;
 }
+.tombol-branding:focus {
+  outline: none;
+}
 
 .tombol-active {
   background-color: #0a9ad3;
@@ -397,7 +400,9 @@ HALAMAN INDEX end
   border: none;
   margin: 30px 0;
 }
-
+.tombol-kirim:focus {
+  outline: none;
+}
 /* kontak kanan */
 .form-control {
   width: 270px;
