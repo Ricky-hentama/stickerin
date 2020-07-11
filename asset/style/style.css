@@ -85,6 +85,8 @@ a {
 } */
 
 .tombol-branding {
+
+  text-align: center;
   color: #5d5d5d;
   height: 45px;
   width: 210px;
@@ -172,6 +174,7 @@ a {
 
 /* card */
 .cards {
+  border: salmon 1px solid;
   margin: 0px auto;
   max-width: 1100px;
   height: 400px;
@@ -182,10 +185,15 @@ a {
 }
 
 .card {
+
   text-align: left;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 30px;
-  width: 260px;
+  max-width: 260px;
+}
+
+div>.card {
+  border: blue 1px solid;
 }
 
 .card-title {
@@ -229,13 +237,13 @@ HALAMAN INDEX end
   border-radius: 20px;
 }
 
-.ads-title {
+.aboutme-title {
   font: Medium 40px/30px Roboto;
   letter-spacing: 2px;
   color: #3d3d3d;
 }
 
-.ads-text {
+.aboutme-text {
   text-align: left;
   font-size: 18px;
   letter-spacing: 0.5px;
@@ -537,6 +545,7 @@ HALAMAN INDEX end
     margin: 10px 10px;
   }
 
+
   /* ALL */
   .tombol-branding {
     margin: 5px auto;
@@ -572,6 +581,9 @@ HALAMAN INDEX end
     justify-content: center;
     align-items: center;
   }
+
+  /* index */
+
 }
 
 /* under 430px */
