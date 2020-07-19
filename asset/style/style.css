@@ -72,6 +72,31 @@ a {
   border-top: 18px solid #ffffff;
 }
 
+.polygon {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(0px);
+  }
+
+  60% {
+    transform: translateY(10px);
+  }
+}
+
 /* section 1 */
 #branding {
   margin-bottom: 100px;
@@ -203,7 +228,11 @@ a {
   letter-spacing: 0px;
   color: #393939;
   margin-bottom: 5px;
+  overflow-y: scroll;
+}
 
+.card-title::-webkit-scrollbar {
+  display: none;
 }
 
 .card-text {
@@ -211,11 +240,16 @@ a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   max-height: 66px;
-  overflow-y: scroll;
+  overflow-y: auto;
+}
+
+.card-text::-webkit-scrollbar {
+  display: none;
 }
 
 .card-body {
-  padding: 10px;
+  height: 144px;
+  padding: 20px;
 
 }
 
