@@ -3,6 +3,27 @@ $(document).ready(function () {
   $(".rectangle").click(function () {
     window.location.href = "index.html#branding";
   });
+  // polygon arrow
+  const icon = $('.rectangle')
+  const arrow = $('.polygon')
+
+
+  arrow.animate([{
+      top: '0'
+    },
+    {
+      down: '10px'
+    },
+    {
+      tops: '0'
+    }
+  ], {
+    duration: 700,
+    iterations: Infinity
+  });
+
+
+
 
   // toggle class branding button
   $(".tombol-branding").click(function () {

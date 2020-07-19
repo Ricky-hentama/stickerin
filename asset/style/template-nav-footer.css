@@ -31,7 +31,7 @@ nav {
 }
 
 /* breadcrumb */
-div > .breadcrumb {
+div>.breadcrumb {
   margin-top: 100px;
 }
 
@@ -41,6 +41,9 @@ div > .breadcrumb {
 }
 
 /* footer */
+foot-logo {
+  width: 200px;
+}
 
 h5 {
   text-align: left;
