@@ -228,7 +228,8 @@ a {
   letter-spacing: 0px;
   color: #393939;
   margin-bottom: 5px;
-  overflow-y: scroll;
+  height: 42px;
+  overflow: scroll;
 }
 
 .card-title::-webkit-scrollbar {
