@@ -115,7 +115,6 @@ a {
 */
 
 .tombol-branding {
-
   text-align: center;
   color: #5d5d5d;
   height: 45px;
@@ -207,7 +206,7 @@ a {
 
   margin: 0px auto;
   max-width: 1100px;
-  height: 450px;
+  height: 425px;
 
 }
 
@@ -221,7 +220,12 @@ a {
 
 }
 
-
+.card-img-top {
+  border-radius: 30px 30px 0 0;
+  height: 158px;
+  background-size: cover;
+  background-position: center;
+}
 
 .card-title {
   font: Bold 14px/19px Nunito;
@@ -591,6 +595,19 @@ HALAMAN INDEX end
   }
 }
 
+/* under 1100px */
+@media (max-width: 1100px) {
+  .tombol-branding {
+    font-size: 18px;
+    height: 41px;
+    width: 189px;
+    /* border: 1px solid #707070;
+    border-radius: 10px;
+    margin: 0px 10px;
+    background-color: #ffffff; */
+  }
+}
+
 /* under 1000px */
 @media (max-width: 1000px) {
 
@@ -657,6 +674,10 @@ HALAMAN INDEX end
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .judul-home {
+    font-size: 30px;
   }
 
   /* index */
