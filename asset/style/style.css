@@ -28,19 +28,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .carousel-img {
   margin-top: -150px;
   width: 1080px;
   height: 465px;
-
 }
 
 .dua {
   background-color: coral;
-
 }
 
 .rectangle {
@@ -51,7 +48,6 @@ a {
   border-radius: 20px;
   position: absolute;
   top: 510px;
-
 }
 
 .rectangle p {
@@ -79,7 +75,6 @@ a {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -135,7 +130,6 @@ a {
 }
 
 .branding-area {
-
   margin-top: 30px;
 }
 
@@ -159,8 +153,6 @@ a {
   opacity: 1;
   border: none;
 }
-
-
 
 .branding-img {
   width: 210px;
@@ -203,21 +195,16 @@ a {
 
 /* card */
 .cards {
-
   margin: 0px auto;
   max-width: 1100px;
   height: 425px;
-
 }
 
 .card {
-
   text-align: left;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 30px;
   max-width: 260px;
-
-
 }
 
 .card-img-top {
@@ -255,7 +242,6 @@ a {
 .card-body {
   height: 144px;
   padding: 20px;
-
 }
 
 /* swiper js */
@@ -282,8 +268,6 @@ a {
   -webkit-align-items: center;
   align-items: center;
 }
-
-
 
 /* 
 *
@@ -518,7 +502,7 @@ HALAMAN INDEX end
 
 /* HALAMAN FAQ */
 
-.accordion-section .panel-default>.panel-heading {
+.accordion-section .panel-default > .panel-heading {
   border-radius: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 3px #8a8a8a29;
@@ -587,7 +571,6 @@ HALAMAN INDEX end
 
 /* under 1300px */
 @media (max-width: 1300px) {
-
   /* portfolio */
   .portfolio-img {
     width: 328px;
@@ -615,7 +598,6 @@ HALAMAN INDEX end
 
 /* under 1000px */
 @media (max-width: 1000px) {
-
   /* portfolio */
   .portfolio-img {
     width: 272px;
@@ -644,7 +626,6 @@ HALAMAN INDEX end
     margin: 10px 10px;
   }
 
-
   /* ALL */
   .tombol-branding {
     margin: 5px 5px;
@@ -653,7 +634,6 @@ HALAMAN INDEX end
 
 /* under 750px ================*/
 @media (max-width: 767px) {
-
   /* brand mobil */
   .brand-mobil-img {
     max-width: 342px;
@@ -702,7 +682,6 @@ HALAMAN INDEX end
 
 /* under 560px */
 @media (max-width: 560px) {
-
   /* index */
   .carousel-img {
     width: 540px;
@@ -712,7 +691,6 @@ HALAMAN INDEX end
 
 /* under 430px */
 @media (max-width: 430px) {
-
   /* portfolio */
   .portfolio-img {
     width: 292px;
@@ -748,7 +726,6 @@ HALAMAN INDEX end
   .brand-imgs {
     padding: 0px auto;
   }
-
 }
 
 /* under 360px */
@@ -765,4 +742,115 @@ HALAMAN INDEX end
   #sticker-ads-img2 {
     padding-left: 200px;
   }
+}
+
+/* coba doang */
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.Portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.Portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #313030;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+.Portfolio #portfolio-flters li:hover,
+.Portfolio #portfolio-flters li.filter-active {
+  color: #ff5821;
+  background: #fff1ed;
+}
+
+.Portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.Portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.Portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+}
+
+.Portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  color: #473d3a;
+}
+
+.Portfolio .portfolio-item .portfolio-info p {
+  color: #7f6d68;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.Portfolio .portfolio-item .portfolio-info .preview-link,
+.Portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 40px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: #635551;
+}
+
+.Portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.Portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: #ff5821;
+}
+
+.Portfolio .portfolio-item .portfolio-info .details-link {
+  right: 10px;
+}
+
+.Portfolio .portfolio-item .portfolio-links {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+
+.Portfolio .portfolio-item .portfolio-links a {
+  color: #fff;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.Portfolio .portfolio-item .portfolio-links a:hover {
+  color: #ffa587;
+}
+
+.Portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 20px;
 }
