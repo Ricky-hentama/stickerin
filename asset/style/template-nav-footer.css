@@ -31,7 +31,7 @@ nav {
 }
 
 /* breadcrumb */
-div>.breadcrumb {
+div > .breadcrumb {
   margin-top: 100px;
 }
 
@@ -54,7 +54,7 @@ h5 {
 }
 
 a:hover {
-  color: #007bff;
+  color: #0e78c4;
   text-decoration: none;
 }
 
@@ -75,4 +75,47 @@ footer a {
   letter-spacing: 0.2px;
   color: #5d5d5d;
   opacity: 1;
+}
+
+@media (max-width: 1090px) {
+  footer h5 {
+    font-size: 18px;
+    letter-spacing: 0.6px;
+  }
+
+  footer a {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 880px) {
+  footer h5 {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+  }
+
+  footer a {
+    font-size: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .isi-footer {
+    padding-left: 18%;
+  }
+}
+@media (max-width: 450px) {
+  .isi-footer {
+    padding-left: 17%;
+  }
+  footer a {
+    text-align: center;
+  }
 }
