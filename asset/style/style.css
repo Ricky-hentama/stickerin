@@ -291,7 +291,6 @@ HALAMAN INDEX end
   max-width: 720px;
   height: 350px;
   background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
-  background: #0a9ad3 0% 0% no-repeat padding-box;
   border-radius: 20px;
 }
 
@@ -730,12 +729,18 @@ HALAMAN INDEX end
 }
 
 /* upper 1200 */
-@media (min-width: 1050px) {
+@media (min-width: 1000px) {
   .text-kanan {
     padding-left: 95px;
   }
   .text-kiri {
     padding-right: 95px;
+  }
+}
+@media (min-width: 991px) {
+  .text-kanan,
+  .text-kiri {
+    margin-top: 1rem;
   }
 }
 @media screen and (min-width: 769px) {
