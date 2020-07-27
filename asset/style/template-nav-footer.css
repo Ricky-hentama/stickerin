@@ -31,7 +31,7 @@ nav {
 }
 
 /* breadcrumb */
-div>.breadcrumb {
+div > .breadcrumb {
   margin-top: 100px;
 }
 
@@ -104,6 +104,9 @@ footer a {
     justify-content: center;
     align-items: center;
   }
+  .list-group-item img {
+    width: 15px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -120,4 +123,24 @@ footer a {
   footer a {
     text-align: center;
   }
+}
+
+/* chat */
+#chat {
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+#chat h1 {
+  position: relative;
+  z-index: 2;
+}
+.chat-button {
+  height: 43px;
+  border-radius: 12px;
+}
+.chat-button i {
+  margin: 0 2px;
 }

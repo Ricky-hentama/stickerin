@@ -1,3 +1,10 @@
+/* font */
+@font-face {
+  font-family: "Maison-Neue-Bold";
+  src: url("../font/MaisonNeueBold/MaisonNeueBold.woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /*  HALAMAN INDEX  */
 a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -295,9 +302,10 @@ HALAMAN INDEX end
 }
 
 .aboutme-title {
-  font: Medium 40px/30px Roboto;
-  letter-spacing: 2px;
-  color: #3d3d3d;
+  font-size: 37px;
+  color: #1c1d1d;
+  font-family: "Maison-Neue-Bold";
+  line-height: 1.5;
 }
 
 .aboutme-text {

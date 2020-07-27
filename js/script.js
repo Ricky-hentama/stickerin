@@ -43,4 +43,16 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+
+  // chat button
+  $("#chat").click(function () {
+    $(this).children("h1").animate(
+      {
+        opacity: 0.25,
+        top: "+=50",
+        height: "toggle",
+      },
+      1000
+    );
+  });
 });
