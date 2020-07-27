@@ -25,10 +25,6 @@ $(document).ready(function () {
     }
   );
 
-  // toggle class branding button
-  $(".tombol-branding").click(function () {
-    $(this).addClass("tombol-active").siblings().removeClass("tombol-active");
-  });
   // responsive card
   var layar = $(window).width();
   if (layar > 750) {

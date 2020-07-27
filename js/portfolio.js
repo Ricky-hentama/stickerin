@@ -1,6 +1,9 @@
 !(function ($) {
   "use strict";
-
+  // toggle class branding button
+  $(".tombol-branding").click(function () {
+    $(this).addClass("tombol-active").siblings().removeClass("tombol-active");
+  });
   // Porfolio isotope and filter
   $(window).on("load", function () {
     var portfolioIsotope = $(".portfolio-container").isotope({
@@ -14,7 +17,6 @@
       portfolioIsotope.isotope({
         filter: $(this).data("filter"),
       });
-      aos_init();
     });
 
     // Initiate venobox (lightbox feature used in portofilo)

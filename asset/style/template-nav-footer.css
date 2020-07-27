@@ -31,7 +31,7 @@ nav {
 }
 
 /* breadcrumb */
-div > .breadcrumb {
+div>.breadcrumb {
   margin-top: 100px;
 }
 
@@ -111,10 +111,12 @@ footer a {
     padding-left: 18%;
   }
 }
+
 @media (max-width: 450px) {
   .isi-footer {
     padding-left: 17%;
   }
+
   footer a {
     text-align: center;
   }
