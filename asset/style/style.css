@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /*  HALAMAN INDEX  */
 a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -82,6 +83,7 @@ a {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -153,6 +155,13 @@ a {
   color: #5d5d5d;
 }
 
+.text-branding {
+  opacity: 0;
+  transform: translate(-70px, 0px);
+  transition: 1.3s;
+}
+
+
 .branding-lanjut {
   margin-top: 30px;
   width: 270px;
@@ -172,14 +181,16 @@ a {
   background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
   background: #0a9ad3 0% 0% no-repeat padding-box;
   border-radius: 10px;
-  opacity: 1;
+  opacity: 0;
+  transform: translate(0, 60px);
+  transition: 0.7s;
 }
 
 /* section 1 end */
 
 /* section 2 */
 #news {
-  height: 620px;
+  height: 650px;
   background: #f3f3f3 0% 0% no-repeat padding-box;
   padding: 30px 0px;
   text-align: center;
@@ -328,7 +339,9 @@ HALAMAN INDEX end
   font: Medium 45px/30px Roboto;
   letter-spacing: 2.25px;
   color: #3d3d3d;
-  opacity: 1;
+  opacity: 0;
+  transform: translate(0, 60px);
+  transition: 1.5s;
 }
 
 .proses-img {
@@ -337,11 +350,41 @@ HALAMAN INDEX end
   background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
   background: #0a9ad3 0% 0% no-repeat padding-box;
   border-radius: 20px;
+  transform: translate(0, 80px);
+  opacity: 0;
+  transition: 0.7s;
 }
 
 #mobil-img-3 {
   margin-bottom: 300px;
 }
+
+/* animasi */
+.img-kiri-1,
+.img-kanan-2,
+.text-kanan-1,
+.text-kiri-2 {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.img-kiri-1,
+.text-kiri-2 {
+  transform: translate(-90px, 0);
+
+}
+
+.img-kanan-2,
+.text-kanan-1 {
+  transform: translate(90px, 0);
+}
+
+.element-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
 
 /* section 2 end */
 /* 
@@ -501,7 +544,7 @@ HALAMAN INDEX end
 
 /* HALAMAN FAQ */
 
-.accordion-section .panel-default > .panel-heading {
+.accordion-section .panel-default>.panel-heading {
   border-radius: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 3px #8a8a8a29;
@@ -570,6 +613,7 @@ HALAMAN INDEX end
 
 /* under 1300px */
 @media (max-width: 1300px) {
+
   /* portfolio */
   .portfolio-img {
     width: 328px;
@@ -593,10 +637,15 @@ HALAMAN INDEX end
     margin: 0px 10px;
     background-color: #ffffff; */
   }
+
+  #news {
+    height: 700px;
+  }
 }
 
 /* under 1000px */
 @media (max-width: 1000px) {
+
   /* portfolio */
   .portfolio-img {
     width: 272px;
@@ -633,6 +682,7 @@ HALAMAN INDEX end
 
 /* under 750px ================*/
 @media (max-width: 767px) {
+
   /* brand mobil */
   .brand-mobil-img {
     max-width: 342px;
@@ -673,23 +723,25 @@ HALAMAN INDEX end
   .tombol-branding {
     margin: 5px 5px;
   }
-
-  #news {
-    height: 680px;
-  }
 }
 
 /* under 560px */
 @media (max-width: 560px) {
+
   /* index */
   .carousel-img {
     width: 540px;
     height: 233px;
   }
+
+  #news {
+    height: 750px;
+  }
 }
 
 /* under 430px */
 @media (max-width: 430px) {
+
   /* portfolio */
   .portfolio-img {
     width: 292px;
@@ -734,6 +786,10 @@ HALAMAN INDEX end
     height: 140px;
     margin-left: 0;
   }
+
+  #news {
+    height: 800px;
+  }
 }
 
 /* upper 1200 */
@@ -741,20 +797,25 @@ HALAMAN INDEX end
   .text-kanan {
     padding-left: 95px;
   }
+
   .text-kiri {
     padding-right: 95px;
   }
 }
+
 @media (min-width: 991px) {
+
   .text-kanan,
   .text-kiri {
     margin-top: 1rem;
   }
 }
+
 @media screen and (min-width: 769px) {
   .container-fluid {
     margin-bottom: 6.5rem;
   }
+
   /* coba doang */
   /*--------------------------------------------------------------
 # Portfolio
@@ -788,6 +849,7 @@ HALAMAN INDEX end
     font-weight: 600;
     color: #473d3a;
   }
+
   .portfolio-item .portfolio-info p {
     text-align: center;
     color: #7f6d68;

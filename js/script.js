@@ -1,58 +1,49 @@
 $(document).ready(function () {
-  // redirect to section1
-  $(".rectangle").click(function () {
-    window.location.href = "index.html#branding";
+  $("#proses-kerja h2").click(function () {
+    alert("ok");
   });
-  // polygon arrow
-  const icon = $(".rectangle");
-  const arrow = $(".polygon");
+  // chat buttons
+  const tombolChat = $("#chat");
+  tombolChat.click(function () {
+    alert("ok");
+  });
 
-  arrow.animate(
-    [
-      {
-        top: "0",
-      },
-      {
-        down: "10px",
-      },
-      {
-        tops: "0",
-      },
-    ],
-    {
-      duration: 700,
-      iterations: Infinity,
+  // scroll in animation
+  $(window).scroll(function () {
+    let wScroll = $(this).scrollTop();
+    //under 200
+    if (wScroll > 200) {
+      // branding img
+      $(".branding-img").each(function (i) {
+        setTimeout(function () {
+          $(".branding-img").eq(i).addClass("element-show");
+        }, 200 * (i + 1));
+      });
+      // branding text home
+      $(".text-branding").addClass("element-show");
+
+      // halaman aboutme section 2
+      $(".img-kanan-2").addClass("element-show");
+      $(".text-kiri-2").addClass("element-show");
     }
-  );
+    // under 300
+    if (wScroll > 350) {
+      // proses kerja title
+      $(".proses-title").addClass("element-show");
+    }
 
-  // responsive card
-  var layar = $(window).width();
-  if (layar > 750) {
-    jumlahCard = 4;
-  } else if (layar < 750 && layar > 550) {
-    jumlahCard = 3;
-  } else {
-    jumlahCard = 2;
-  }
-  var jumlahCard;
-  var swiper = new Swiper(".swiper-container", {
-    slidesPerView: jumlahCard,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    // under 400
+    if (wScroll > 650) {
+      $(".proses-img").each(function (i) {
+        setTimeout(function () {
+          $(".proses-img").eq(i).addClass("element-show");
+        }, 200 * (i + 1));
+      });
+    }
   });
-
-  // chat button
-  $("#chat").click(function () {
-    $(this).children("h1").animate(
-      {
-        opacity: 0.25,
-        top: "+=50",
-        height: "toggle",
-      },
-      1000
-    );
+  // halaman aboutme section 1
+  $(window).on("load", function () {
+    $(".img-kiri-1").addClass("element-show");
+    $(".text-kanan-1").addClass("element-show");
   });
 });
