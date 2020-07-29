@@ -581,7 +581,7 @@ HALAMAN INDEX end
 .accordion-section .panel-default .panel-title a:after {
   /* font-size: 2rem; */
   content: "︿";
-
+  margin-top: 2px;
   /* content: icon; */
   font-weight: 900;
   color: #000000;
@@ -589,6 +589,7 @@ HALAMAN INDEX end
 }
 
 .accordion-section .panel-default .panel-title a.collapsed:after {
+  margin-bottom: 3px;
   content: "﹀";
 }
 
