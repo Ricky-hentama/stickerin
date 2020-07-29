@@ -1,12 +1,8 @@
 $(document).ready(function () {
-  $("#proses-kerja h2").click(function () {
-    alert("ok");
-  });
-  // chat buttons
-  const tombolChat = $("#chat");
-  tombolChat.click(function () {
-    alert("ok");
-  });
+  // chat button
+
+  // kontak spiner
+  $("#loadspin").hide();
 
   // scroll in animation
   $(window).scroll(function () {
@@ -26,24 +22,28 @@ $(document).ready(function () {
       $(".img-kanan-2").addClass("element-show");
       $(".text-kiri-2").addClass("element-show");
     }
-    // under 300
+    // under 350
     if (wScroll > 350) {
       // proses kerja title
       $(".proses-title").addClass("element-show");
     }
 
-    // under 400
+    // under 650
     if (wScroll > 650) {
       $(".proses-img").each(function (i) {
         setTimeout(function () {
           $(".proses-img").eq(i).addClass("element-show");
         }, 200 * (i + 1));
       });
+      // halaman branding section 3
+      $(".text-kanan-3").addClass("element-show");
+      $(".img-kiri-3").addClass("element-show");
     }
   });
   // halaman aboutme section 1
   $(window).on("load", function () {
     $(".img-kiri-1").addClass("element-show");
     $(".text-kanan-1").addClass("element-show");
+    $(".judul-produk").addClass("element-show");
   });
 });

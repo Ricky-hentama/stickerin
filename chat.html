@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="asset/vendor/bootstrap-4.5.0-dist/css/bootstrap.css" />
   <link rel="stylesheet" href="asset/vendor/fontawesome-free-5.13.1-web/css/all.css">
   <!-- swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
 
 
   <!-- costum css-->
@@ -19,6 +19,90 @@
   <link rel="stylesheet" href="asset/style/template-nav-footer.css">
 
   <title>Sticker-in</title>
+
+  <style>
+    .wws--bg-color {
+      background-color: #22c15e
+    }
+
+    .wws--text-color {
+      color: #fff
+    }
+
+    .wws-popup__open-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+      border-radius: 12px;
+      display: inline-block;
+      /* margin-top: 14px; */
+      cursor: pointer
+    }
+
+    .wws-popup-container--position {
+      right: 12px;
+      bottom: 12px
+    }
+
+    .wws-popup__open-btn {
+      float: left;
+
+    }
+
+    .wws-gradient--position {
+      bottom: 0;
+      right: 0;
+      background: radial-gradient(ellipse at bottom right, rgba(29, 39, 54, .2) 0, rgba(29, 39, 54, 0) 72%)
+    }
+
+    .wws-shadow {
+      box-shadow: 0 0 50px rgba(0, 0, 0, .1)
+    }
+
+    .wws-popup__open-btn>i,
+    .wws-popup__open-btn>span {
+      vertical-align: middle
+    }
+
+    .wws-popup-container * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    .wws-popup-container {
+      width: auto;
+      position: fixed;
+      z-index: 9999999
+    }
+
+    .wws-popup {
+      display: none;
+      width: 200px;
+
+    }
+
+    .wws-popup__close-btn {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      float: right;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 19px;
+      cursor: pointer;
+      transform: translate(-25px, -30px);
+      font-size: 13px;
+      box-shadow: 0px 2px #b1afaf;
+    }
+
+
+
+
+
+
+    .wws-popup__input::-webkit-input-placeholder {
+      color: #888fbb !important
+    }
+  </style>
 </head>
 
 <body>
@@ -26,36 +110,30 @@
 
 
 
+  <div class="wws-popup-container wws-popup-container--position">
+    <div class="wws-gradient wws-gradient--position"></div>
+    <div class="wws-popup" data-wws-popup-status="0">
+      <div class="wws-popup__header">
+        <div class="wws-popup__close-btn wws-shadow wws--bg-color wws--text-color">
+          x
+        </div>
+        <div class="wws-clearfix"></div>
+      </div>
+      <div class="wws-popup__body">
+        <div class="chat-admin  text-center "><i class="fas fa-comment-dots" style="color: rgb(63, 94, 235);"></i> Admin
+          offline</div>
+        <div class="chat-whatsapp text-center "> <i class="fab fa-whatsapp" style="color:  #22c15e;"></i>
+          08118436000</div>
 
-
-
-
-
-
-
-
-
-
-  <div id="chat">
-
-    <div class="menu-chat">
-      <h1>satu</h1>
-      <h1>dua</h1>
+      </div>
     </div>
-    <div class="chat-button btn btn-success">
-      <i class="fas fa-comment"></i> Ada yang bisa di bantu?
+    <div class="wws-popup__footer">
+      <div class="wws-popup__open-btn wws-shadow wws--text-color wws--bg-color">
+        <i class="wws-icon-whatsapp wws-popup__open-icon" aria-hidden="true"></i> <span> <i class="fas fa-comment"></i>
+          Ada yang bisa di bantu?</span></div>
+      <div class="wws-clearfix"></div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -78,6 +156,110 @@
   </script>
   <script src="js/animeJS v3.2.0.js/anime.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    const wwsWidget = {
+      popup: jQuery(".wws-popup"),
+      popupGradient: jQuery(".wws-gradient"),
+      trigger: function () {
+        if (this.popup.attr("data-wws-popup-status") === "0") {
+          this.popup.slideDown();
+          this.popup.attr("data-wws-popup-status", "1");
+          this.popupGradient.show();
+        } else {
+          this.popup.slideUp();
+          this.popup.attr("data-wws-popup-status", "0");
+          this.popupGradient.hide();
+        }
+      },
+      isPopupOpen: function () {
+        return jQuery(this.popup).attr("data-wws-popup-status") === "1" ?
+          true :
+          false;
+      },
+      autoPopup: function (delayInSeconds) {
+        if ("yes" !== sessionStorage.wwsAutoPopup) {
+          if (false === this.isPopupOpen()) {
+            setTimeout(function () {
+              wwsWidget.trigger();
+              sessionStorage.wwsAutoPopup = "yes";
+            }, Number(delayInSeconds * 1000));
+          }
+        }
+      },
+      sendMessage: function (message = "", whatsappNumber = "") {
+        if ("" === message || "" === whatsappNumber) {
+          return false;
+        }
+        if (this.is_mobile.any()) {
+          window.open(
+            wwsObj.whatsapp_mobile_api +
+            "/send?phone=" +
+            whatsappNumber +
+            "&text=" +
+            message +
+            ""
+          );
+        } else {
+          window.open(
+            wwsObj.whatsapp_desktop_api +
+            "/send?phone=" +
+            whatsappNumber +
+            "&text=" +
+            message +
+            ""
+          );
+        }
+        return true;
+      },
+      sendGroupInvitation: function (groupID) {
+        window.open("https://chat.whatsapp.com/" + groupID);
+      },
+      is_mobile: {
+        Android: function () {
+          return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+          return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+          return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+          return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+          return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+          return (
+            wwsWidget.is_mobile.Android() ||
+            wwsWidget.is_mobile.BlackBerry() ||
+            wwsWidget.is_mobile.iOS() ||
+            wwsWidget.is_mobile.Opera() ||
+            wwsWidget.is_mobile.Windows()
+          );
+        },
+      },
+      logAnalytics: function (message = "N/A", number = "N/A") {
+        jQuery.ajax({
+          url: wwsObj.admin_url,
+          type: "post",
+          data: {
+            action: "wws_click_analytics",
+            message: message,
+            number: number
+          },
+        });
+      },
+    };
+
+    jQuery(".wws-popup__open-btn, .wws-popup__close-btn").on("click", function (
+      event
+    ) {
+      event.preventDefault();
+      wwsWidget.trigger();
+    });
+  </script>
 </body>
 
 </html>

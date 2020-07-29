@@ -53,7 +53,7 @@ a {
   width: 285px;
   height: 47px;
   background: #ffffff 0% 0% no-repeat padding-box;
-  border-radius: 20px;
+  border-radius: 15px;
   position: absolute;
   top: 510px;
 }
@@ -61,7 +61,7 @@ a {
 .rectangle p {
   font: Regular 16px/20px PT Sans;
   letter-spacing: 0.48px;
-  font-size: 16px;
+  font-size: 15px;
   color: #5d5d5d;
   text-transform: uppercase;
   padding-top: 10px;
@@ -83,7 +83,6 @@ a {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -160,7 +159,6 @@ a {
   transform: translate(-70px, 0px);
   transition: 1.3s;
 }
-
 
 .branding-lanjut {
   margin-top: 30px;
@@ -317,6 +315,7 @@ HALAMAN INDEX end
   color: #1c1d1d;
   font-family: "Maison-Neue-Bold";
   line-height: 1.5;
+  word-break: break-all;
 }
 
 .aboutme-text {
@@ -363,28 +362,34 @@ HALAMAN INDEX end
 .img-kiri-1,
 .img-kanan-2,
 .text-kanan-1,
-.text-kiri-2 {
+.text-kiri-2,
+.img-kiri-3,
+.text-kanan-3,
+.judul-produk {
   opacity: 0;
   transition: 1.5s;
 }
 
 .img-kiri-1,
-.text-kiri-2 {
+.text-kiri-2,
+.img-kiri-3 {
   transform: translate(-90px, 0);
-
 }
 
 .img-kanan-2,
-.text-kanan-1 {
+.text-kanan-1,
+.text-kanan-3 {
   transform: translate(90px, 0);
+}
+
+.judul-produk {
+  transform: translate(0, -60px);
 }
 
 .element-show {
   transform: translate(0, 0);
   opacity: 1;
 }
-
-
 
 /* section 2 end */
 /* 
@@ -544,7 +549,7 @@ HALAMAN INDEX end
 
 /* HALAMAN FAQ */
 
-.accordion-section .panel-default>.panel-heading {
+.accordion-section .panel-default > .panel-heading {
   border-radius: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 3px #8a8a8a29;
@@ -613,7 +618,6 @@ HALAMAN INDEX end
 
 /* under 1300px */
 @media (max-width: 1300px) {
-
   /* portfolio */
   .portfolio-img {
     width: 328px;
@@ -645,7 +649,6 @@ HALAMAN INDEX end
 
 /* under 1000px */
 @media (max-width: 1000px) {
-
   /* portfolio */
   .portfolio-img {
     width: 272px;
@@ -682,7 +685,6 @@ HALAMAN INDEX end
 
 /* under 750px ================*/
 @media (max-width: 767px) {
-
   /* brand mobil */
   .brand-mobil-img {
     max-width: 342px;
@@ -727,7 +729,6 @@ HALAMAN INDEX end
 
 /* under 560px */
 @media (max-width: 560px) {
-
   /* index */
   .carousel-img {
     width: 540px;
@@ -741,7 +742,6 @@ HALAMAN INDEX end
 
 /* under 430px */
 @media (max-width: 430px) {
-
   /* portfolio */
   .portfolio-img {
     width: 292px;
@@ -804,10 +804,18 @@ HALAMAN INDEX end
 }
 
 @media (min-width: 991px) {
-
   .text-kanan,
   .text-kiri {
     margin-top: 1rem;
+  }
+}
+
+@media (min-width: 560px) {
+  /* kontak */
+  #loadspin {
+    margin-left: 10%;
+
+    position: absolute;
   }
 }
 
