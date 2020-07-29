@@ -1,9 +1,7 @@
 $(document).ready(function () {
-  // chat button
-
   // kontak spiner
   $("#loadspin").hide();
-
+  //====================================================================================================================================================================================================//
   // scroll in animation
   $(window).scroll(function () {
     let wScroll = $(this).scrollTop();
@@ -35,9 +33,18 @@ $(document).ready(function () {
           $(".proses-img").eq(i).addClass("element-show");
         }, 200 * (i + 1));
       });
+      // tombol branding lanjut index
+      $(".branding-lanjut").addClass("element-show");
       // halaman branding section 3
       $(".text-kanan-3").addClass("element-show");
       $(".img-kiri-3").addClass("element-show");
+    }
+    // under 950
+    if (wScroll > 950) {
+      // judul last project
+      $(".judul-last-project").addClass("element-show");
+      //deskripsi
+      $(".deskripsi-last-project").addClass("element-show");
     }
   });
   // halaman aboutme section 1
@@ -45,5 +52,110 @@ $(document).ready(function () {
     $(".img-kiri-1").addClass("element-show");
     $(".text-kanan-1").addClass("element-show");
     $(".judul-produk").addClass("element-show");
+  });
+
+  //==================================================================================================================================================================================================//
+  // chat button
+  const wwsWidget = {
+    popup: jQuery(".wws-popup"),
+    popupGradient: jQuery(".wws-gradient"),
+    trigger: function () {
+      if (this.popup.attr("data-wws-popup-status") === "0") {
+        this.popup.slideDown();
+        this.popup.attr("data-wws-popup-status", "1");
+        this.popupGradient.show();
+      } else {
+        this.popup.slideUp();
+        this.popup.attr("data-wws-popup-status", "0");
+        this.popupGradient.hide();
+      }
+    },
+    isPopupOpen: function () {
+      return jQuery(this.popup).attr("data-wws-popup-status") === "1"
+        ? true
+        : false;
+    },
+    autoPopup: function (delayInSeconds) {
+      if ("yes" !== sessionStorage.wwsAutoPopup) {
+        if (false === this.isPopupOpen()) {
+          setTimeout(function () {
+            wwsWidget.trigger();
+            sessionStorage.wwsAutoPopup = "yes";
+          }, Number(delayInSeconds * 1000));
+        }
+      }
+    },
+    sendMessage: function (message = "", whatsappNumber = "") {
+      if ("" === message || "" === whatsappNumber) {
+        return false;
+      }
+      if (this.is_mobile.any()) {
+        window.open(
+          wwsObj.whatsapp_mobile_api +
+            "/send?phone=" +
+            whatsappNumber +
+            "&text=" +
+            message +
+            ""
+        );
+      } else {
+        window.open(
+          wwsObj.whatsapp_desktop_api +
+            "/send?phone=" +
+            whatsappNumber +
+            "&text=" +
+            message +
+            ""
+        );
+      }
+      return true;
+    },
+    sendGroupInvitation: function (groupID) {
+      window.open("https://chat.whatsapp.com/" + groupID);
+    },
+    is_mobile: {
+      Android: function () {
+        return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+      },
+      Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+      },
+      any: function () {
+        return (
+          wwsWidget.is_mobile.Android() ||
+          wwsWidget.is_mobile.BlackBerry() ||
+          wwsWidget.is_mobile.iOS() ||
+          wwsWidget.is_mobile.Opera() ||
+          wwsWidget.is_mobile.Windows()
+        );
+      },
+    },
+    logAnalytics: function (message = "N/A", number = "N/A") {
+      jQuery.ajax({
+        url: wwsObj.admin_url,
+        type: "post",
+        data: {
+          action: "wws_click_analytics",
+          message: message,
+          number: number,
+        },
+      });
+    },
+  };
+
+  jQuery(".wws-popup__open-btn, .wws-popup__close-btn").on("click", function (
+    event
+  ) {
+    event.preventDefault();
+    wwsWidget.trigger();
   });
 });
