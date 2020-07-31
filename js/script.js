@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  // tombol branding
+  $(".tombol-branding").click(function () {
+    $(this).addClass("tombol-active").siblings().removeClass("tombol-active");
+  });
   // kontak spiner
   $("#loadspin").hide();
   //====================================================================================================================================================================================================//
@@ -71,9 +75,9 @@ $(document).ready(function () {
       }
     },
     isPopupOpen: function () {
-      return jQuery(this.popup).attr("data-wws-popup-status") === "1"
-        ? true
-        : false;
+      return jQuery(this.popup).attr("data-wws-popup-status") === "1" ?
+        true :
+        false;
     },
     autoPopup: function (delayInSeconds) {
       if ("yes" !== sessionStorage.wwsAutoPopup) {
@@ -92,20 +96,20 @@ $(document).ready(function () {
       if (this.is_mobile.any()) {
         window.open(
           wwsObj.whatsapp_mobile_api +
-            "/send?phone=" +
-            whatsappNumber +
-            "&text=" +
-            message +
-            ""
+          "/send?phone=" +
+          whatsappNumber +
+          "&text=" +
+          message +
+          ""
         );
       } else {
         window.open(
           wwsObj.whatsapp_desktop_api +
-            "/send?phone=" +
-            whatsappNumber +
-            "&text=" +
-            message +
-            ""
+          "/send?phone=" +
+          whatsappNumber +
+          "&text=" +
+          message +
+          ""
         );
       }
       return true;

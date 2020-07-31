@@ -9,8 +9,7 @@ $(document).ready(function () {
   const arrow = $(".polygon");
 
   arrow.animate(
-    [
-      {
+    [{
         top: "0",
       },
       {
@@ -19,8 +18,7 @@ $(document).ready(function () {
       {
         tops: "0",
       },
-    ],
-    {
+    ], {
       duration: 700,
       iterations: Infinity,
     }
