@@ -162,4 +162,23 @@ $(document).ready(function () {
     event.preventDefault();
     wwsWidget.trigger();
   });
+
+  // scroll navbar effect
+  var position = $(window).scrollTop();
+
+  // should start at 0
+
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > position) {
+      console.log("scrollDown");
+      $("nav").removeClass("nav-show");
+      $("nav").addClass("nav-hide");
+    } else {
+      console.log("scrollUp");
+      $("nav").removeClass("nav-hide");
+      $("nav").addClass("nav-show");
+    }
+    position = scroll;
+  });
 });
