@@ -171,11 +171,9 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > position) {
-      console.log("scrollDown");
       $("nav").removeClass("nav-show");
       $("nav").addClass("nav-hide");
     } else {
-      console.log("scrollUp");
       $("nav").removeClass("nav-hide");
       $("nav").addClass("nav-show");
     }
