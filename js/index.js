@@ -4,26 +4,40 @@ $(document).ready(function () {
     window.location.href = "index.html#branding";
   });
 
-
   // branding section
 
   $(".tombol-branding").click(function (e) {
     $(this).addClass("tombol-active").siblings().removeClass("tombol-active");
 
     if (e.target.dataset.target == "branding-mobil") {
-      $(".home-branding-mobil").addClass("branding-show").siblings().removeClass("branding-show");
+      $(".home-branding-mobil")
+        .addClass("branding-show")
+        .siblings()
+        .removeClass("branding-show");
     }
     if (e.target.dataset.target == "branding-kantor") {
-      $(".home-branding-kantor").addClass("branding-show").siblings().removeClass("branding-show");
+      $(".home-branding-kantor")
+        .addClass("branding-show")
+        .siblings()
+        .removeClass("branding-show");
     }
     if (e.target.dataset.target == " digital-printing") {
-      $(".home-digital-printing").addClass("branding-show").siblings().removeClass("branding-show");
+      $(".home-digital-printing")
+        .addClass("branding-show")
+        .siblings()
+        .removeClass("branding-show");
     }
     if (e.target.dataset.target == " cutting-sticker") {
-      $(".home-cutting-sticker").addClass("branding-show").siblings().removeClass("branding-show");
+      $(".home-cutting-sticker")
+        .addClass("branding-show")
+        .siblings()
+        .removeClass("branding-show");
     }
     if (e.target.dataset.target == " stock-sticker") {
-      $(".home-stock-sticker").addClass("branding-show").siblings().removeClass("branding-show");
+      $(".home-stock-sticker")
+        .addClass("branding-show")
+        .siblings()
+        .removeClass("branding-show");
     }
   });
 
@@ -32,7 +46,8 @@ $(document).ready(function () {
   const arrow = $(".polygon");
 
   arrow.animate(
-    [{
+    [
+      {
         top: "0",
       },
       {
@@ -41,7 +56,8 @@ $(document).ready(function () {
       {
         tops: "0",
       },
-    ], {
+    ],
+    {
       duration: 700,
       iterations: Infinity,
     }
@@ -60,6 +76,10 @@ $(document).ready(function () {
   var swiper = new Swiper(".swiper-container", {
     slidesPerView: jumlahCard,
     spaceBetween: 10,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

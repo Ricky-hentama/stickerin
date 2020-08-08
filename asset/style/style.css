@@ -430,10 +430,7 @@ HALAMAN INDEX end
   transform: translate(0, -60px);
 }
 
-.element-show {
-  transform: translate(0, 0);
-  opacity: 1;
-}
+
 
 /* section 2 end */
 /* 
@@ -499,14 +496,51 @@ HALAMAN INDEX end
 }
 
 /* portfilio img */
-.portfolio-item img {
+.portfolio-img {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 328px;
   height: 234px;
-  background: #0a9ad3 0% 0% no-repeat padding-box;
   border-radius: 15px;
+  opacity: 0;
+  transform: translate(0, 60px);
+  transition: 0.7s;
 }
+
+.portfolio-branding-mobil .portfolio-img {
+  background-color: #0a9ad3;
+}
+
+.portfolio-branding-kantor .portfolio-img {
+  background-color: coral;
+}
+
+.portfolio-digital-printing .portfolio-img {
+  background-color: greenyellow;
+}
+
+.portfolio-cutting-sticker .portfolio-img {
+  background-color: hotpink;
+}
+
+.portfolio-stock-sticker .portfolio-img {
+  background-color: navy;
+}
+
+/* hidden */
+.portfolio-branding-mobil,
+.portfolio-branding-kantor,
+.portfolio-digital-printing,
+.portfolio-cutting-sticker,
+.portfolio-stock-sticker {
+  display: none;
+}
+
+/* portfolio show */
+.portfolio-show {
+  display: block;
+}
+
 
 #pagination {
   margin-top: 65px;
@@ -660,6 +694,10 @@ HALAMAN INDEX end
 *
 *
 */
+.element-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
 
 /* under 1300px */
 @media (max-width: 1300px) {
