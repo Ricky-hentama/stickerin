@@ -612,6 +612,20 @@ HALAMAN INDEX end
   width: 80%;
 }
 
+.text-kirim {
+  line-height: 22px;
+}
+
+#loadspin {
+  position: absolute;
+  transform: translate(-5px, -7px);
+  z-index: 12;
+  left: 100px;
+  top: 100;
+
+
+}
+
 /* section 1 end */
 /* 
 *
@@ -899,73 +913,59 @@ HALAMAN INDEX end
   }
 }
 
-@media (min-width: 560px) {
 
-  /* kontak */
-  #loadspin {
-    margin-left: 10%;
 
-    position: absolute;
-  }
+.container-fluid {
+  margin-bottom: 6.5rem;
 }
 
-@media screen and (min-width: 769px) {
-  .container-fluid {
-    margin-bottom: 6.5rem;
-  }
-
-  /* coba doang */
-  /*--------------------------------------------------------------
+/* coba doang */
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 
-  .item-wraper {
-    margin-bottom: 30px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-  }
+.item-wraper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
 
-  .portfolio-item .portfolio-info {
-    opacity: 0;
-    position: absolute;
-    left: 30px;
-    right: 30px;
-    bottom: 0px;
-    z-index: 3;
-    transition: all ease-in-out 0.3s;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  .portfolio-item .portfolio-info h4 {
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 600;
-    color: #473d3a;
-  }
-
-  .portfolio-item .portfolio-info p {
-    text-align: center;
-    color: #7f6d68;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-
-  /* .portfolio-item .portfolio-info .preview-link,
-.portfolio-item .portfolio-info .details-link {
+.portfolio-item .portfolio-info {
+  opacity: 0;
   position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #635551;
-} */
+  left: 30px;
+  right: 30px;
+  bottom: 0px;
+  z-index: 3;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transform: translate(0, 30px);
+}
 
-  .portfolio-item:hover .portfolio-info {
-    opacity: 1;
-    bottom: 20px;
-  }
+.portfolio-item .portfolio-info h4 {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  color: #473d3a;
+}
+
+.portfolio-item .portfolio-info p {
+  text-align: center;
+  color: #7f6d68;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+.portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  transform: translate(0, 0);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }

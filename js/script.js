@@ -5,6 +5,13 @@ $(document).ready(function () {
   });
   // kontak spiner
   $("#loadspin").hide();
+  // trigger disable button
+  $(".text-kontak").click(function () {
+    $(".text-kirim").text("Mengirim");
+    $("#loadspin").show();
+    $(".tombol-kirim").attr("disabled", "0");
+  });
+
   //====================================================================================================================================================================================================//
   // scroll in animation
   $(window).scroll(function () {
