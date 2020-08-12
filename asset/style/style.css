@@ -31,7 +31,7 @@ a {
 .slide-item {
   width: 100%;
   background: #0a9ad3;
-  height: 600px;
+  height: 900px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -42,6 +42,14 @@ a {
   margin-top: -150px;
   width: 1080px;
   height: 465px;
+}
+
+.satu {
+  background-image: url("../img/mobil.png");
+  background-position: center;
+  background-size: cover;
+  background-size: 75%;
+  background-repeat: no-repeat;
 }
 
 .dua {
@@ -55,7 +63,7 @@ a {
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 15px;
   position: absolute;
-  top: 510px;
+  top: 810px;
 }
 
 .rectangle p {
@@ -83,7 +91,6 @@ a {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -124,6 +131,10 @@ a {
   margin: 0px 10px;
   background-color: #ffffff;
   padding: 5px;
+}
+.tombol-branding img {
+  width: 32px;
+  height: 32px;
 }
 
 .tombol-branding:focus {
@@ -265,12 +276,12 @@ a {
 .card {
   text-align: left;
   background: #ffffff 0% 0% no-repeat padding-box;
-  border-radius: 30px;
+  border-radius: 10px;
   max-width: 260px;
 }
 
 .card-img-top {
-  border-radius: 30px 30px 0 0;
+  border-radius: 10px 10px 0 0;
   height: 158px;
   background-size: cover;
   background-position: center;
@@ -388,8 +399,9 @@ HALAMAN INDEX end
 }
 
 .proses-img {
-  max-width: 235px;
-  min-height: 255px;
+  width: 235px;
+  height: 255px;
+  margin: 0 auto;
   background: var(--unnamed-color-0a9ad3) 0% 0% no-repeat padding-box;
   background: #0a9ad3 0% 0% no-repeat padding-box;
   border-radius: 20px;
@@ -429,8 +441,6 @@ HALAMAN INDEX end
 .judul-produk {
   transform: translate(0, -60px);
 }
-
-
 
 /* section 2 end */
 /* 
@@ -541,7 +551,6 @@ HALAMAN INDEX end
   display: block;
 }
 
-
 #pagination {
   margin-top: 65px;
   margin-bottom: 100px;
@@ -622,8 +631,6 @@ HALAMAN INDEX end
   z-index: 12;
   left: 100px;
   top: 100;
-
-
 }
 
 /* section 1 end */
@@ -641,7 +648,7 @@ HALAMAN INDEX end
 
 /* HALAMAN FAQ */
 
-.accordion-section .panel-default>.panel-heading {
+.accordion-section .panel-default > .panel-heading {
   border-radius: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 3px #8a8a8a29;
@@ -715,7 +722,6 @@ HALAMAN INDEX end
 
 /* under 1300px */
 @media (max-width: 1300px) {
-
   /* portfolio */
   .portfolio-img {
     width: 328px;
@@ -747,7 +753,6 @@ HALAMAN INDEX end
 
 /* under 1000px */
 @media (max-width: 1000px) {
-
   /* portfolio */
   .portfolio-img {
     width: 272px;
@@ -784,7 +789,6 @@ HALAMAN INDEX end
 
 /* under 750px ================*/
 @media (max-width: 767px) {
-
   /* brand mobil */
   .brand-mobil-img {
     max-width: 342px;
@@ -829,7 +833,6 @@ HALAMAN INDEX end
 
 /* under 560px */
 @media (max-width: 560px) {
-
   /* index */
   .carousel-img {
     width: 540px;
@@ -839,11 +842,26 @@ HALAMAN INDEX end
   #news {
     height: 750px;
   }
+  .slide-item {
+    height: 500px;
+  }
+  .carousel-img {
+    width: 432px;
+    height: 186px;
+  }
+
+  .rectangle {
+    display: none;
+  }
+  /* tentang kami */
+  .proses-img {
+    width: 188px;
+    height: 204px;
+  }
 }
 
 /* under 430px */
 @media (max-width: 430px) {
-
   /* portfolio */
   .portfolio-img {
     width: 292px;
@@ -851,24 +869,7 @@ HALAMAN INDEX end
     margin: 20px auto;
   }
 
-  /* tentang kami */
-  .proses-img {
-    margin: 10px auto;
-  }
-
   /* index */
-  .carousel-img {
-    width: 432px;
-    height: 186px;
-  }
-
-  .slide-item {
-    height: 500px;
-  }
-
-  .rectangle {
-    top: 415px;
-  }
 
   .branding-img {
     width: 100px;
@@ -878,6 +879,18 @@ HALAMAN INDEX end
 
   .brand-imgs {
     padding: 0px auto;
+  }
+  .tombol-branding img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+  .tombol-branding {
+    margin: 0;
+    height: 48px;
+    width: 80px;
+    font-size: 9px;
   }
 }
 
@@ -891,6 +904,17 @@ HALAMAN INDEX end
 
   #news {
     height: 800px;
+  }
+  .tombol-branding img {
+    width: 18px;
+    height: 18px;
+  }
+  .tombol-branding {
+    margin: 0;
+    height: 42px;
+    width: 70px;
+    padding: 0;
+    font-size: 8px;
   }
 }
 
@@ -906,14 +930,11 @@ HALAMAN INDEX end
 }
 
 @media (min-width: 991px) {
-
   .text-kanan,
   .text-kiri {
     margin-top: 1rem;
   }
 }
-
-
 
 .container-fluid {
   margin-bottom: 6.5rem;
@@ -960,7 +981,6 @@ HALAMAN INDEX end
   font-size: 14px;
   margin-bottom: 0;
 }
-
 
 .portfolio-item:hover .portfolio-info {
   opacity: 1;
