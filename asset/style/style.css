@@ -425,7 +425,7 @@ HALAMAN INDEX end
 .text-kanan-3,
 .judul-produk {
   opacity: 0;
-  transition: 1s;
+  transition: 1s ease;
 }
 
 .img-kiri-1,
