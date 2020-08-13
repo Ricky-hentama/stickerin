@@ -91,6 +91,7 @@ a {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -132,6 +133,7 @@ a {
   background-color: #ffffff;
   padding: 5px;
 }
+
 .tombol-branding img {
   width: 32px;
   height: 32px;
@@ -423,18 +425,20 @@ HALAMAN INDEX end
 .text-kanan-3,
 .judul-produk {
   opacity: 0;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .img-kiri-1,
 .text-kiri-2,
 .img-kiri-3 {
+
   transform: translate(-90px, 0);
 }
 
 .img-kanan-2,
 .text-kanan-1,
 .text-kanan-3 {
+  position: relative;
   transform: translate(90px, 0);
 }
 
@@ -648,7 +652,7 @@ HALAMAN INDEX end
 
 /* HALAMAN FAQ */
 
-.accordion-section .panel-default > .panel-heading {
+.accordion-section .panel-default>.panel-heading {
   border-radius: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 3px #8a8a8a29;
@@ -716,12 +720,15 @@ HALAMAN INDEX end
 *
 */
 .element-show {
-  transform: translate(0, 0);
   opacity: 1;
+  display: inline;
+  transform: translate(0, 0);
+
 }
 
 /* under 1300px */
 @media (max-width: 1300px) {
+
   /* portfolio */
   .portfolio-img {
     width: 328px;
@@ -753,6 +760,7 @@ HALAMAN INDEX end
 
 /* under 1000px */
 @media (max-width: 1000px) {
+
   /* portfolio */
   .portfolio-img {
     width: 272px;
@@ -789,6 +797,7 @@ HALAMAN INDEX end
 
 /* under 750px ================*/
 @media (max-width: 767px) {
+
   /* brand mobil */
   .brand-mobil-img {
     max-width: 342px;
@@ -833,6 +842,7 @@ HALAMAN INDEX end
 
 /* under 560px */
 @media (max-width: 560px) {
+
   /* index */
   .carousel-img {
     width: 540px;
@@ -842,9 +852,11 @@ HALAMAN INDEX end
   #news {
     height: 750px;
   }
+
   .slide-item {
     height: 500px;
   }
+
   .carousel-img {
     width: 432px;
     height: 186px;
@@ -853,6 +865,7 @@ HALAMAN INDEX end
   .rectangle {
     display: none;
   }
+
   /* tentang kami */
   .proses-img {
     width: 188px;
@@ -862,6 +875,7 @@ HALAMAN INDEX end
 
 /* under 430px */
 @media (max-width: 430px) {
+
   /* portfolio */
   .portfolio-img {
     width: 292px;
@@ -880,12 +894,14 @@ HALAMAN INDEX end
   .brand-imgs {
     padding: 0px auto;
   }
+
   .tombol-branding img {
     width: 24px;
     height: 24px;
     display: block;
     margin: 0 auto;
   }
+
   .tombol-branding {
     margin: 0;
     height: 48px;
@@ -905,10 +921,12 @@ HALAMAN INDEX end
   #news {
     height: 800px;
   }
+
   .tombol-branding img {
     width: 18px;
     height: 18px;
   }
+
   .tombol-branding {
     margin: 0;
     height: 42px;
@@ -930,6 +948,7 @@ HALAMAN INDEX end
 }
 
 @media (min-width: 991px) {
+
   .text-kanan,
   .text-kiri {
     margin-top: 1rem;
