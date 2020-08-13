@@ -425,7 +425,7 @@ HALAMAN INDEX end
 .text-kanan-3,
 .judul-produk {
   opacity: 0;
-  transition: 1s ease;
+  transition: 1s;
 }
 
 .img-kiri-1,
@@ -907,6 +907,12 @@ HALAMAN INDEX end
     height: 48px;
     width: 80px;
     font-size: 9px;
+  }
+
+  /* tentang kami */
+  .proses-img {
+    width: 141px;
+    height: 153px;
   }
 }
 
