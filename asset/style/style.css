@@ -132,6 +132,12 @@ a {
   margin: 0px 10px;
   background-color: #ffffff;
   padding: 5px;
+  transition: 0.6s;
+}
+
+.tombol-branding:hover {
+  background-color: #0a9ad3;
+  color: white;
 }
 
 .tombol-branding img {
@@ -650,7 +656,7 @@ HALAMAN INDEX end
 *
 */
 
-/* HALAMAN FAQ */
+/* HALAMAN  FAQ */
 
 .accordion-section .panel-default>.panel-heading {
   border-radius: 20px;
@@ -659,6 +665,7 @@ HALAMAN INDEX end
   border: 1px solid #b5b5b5;
   opacity: 1;
   margin-bottom: -12px;
+
 }
 
 .accordion-section .panel-default .panel-title a {
@@ -703,10 +710,17 @@ HALAMAN INDEX end
 .faq-img {
   max-width: 439px;
   height: 246px;
-  background: #1a7fc7 0% 0% no-repeat padding-box;
+  /* background: #1a7fc7 0% 0% no-repeat padding-box; */
   border: 1px solid #0e78c4;
-  margin: 40px auto;
+  margin: 40px 10px;
   margin-bottom: 80px;
+
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+
+
+
 }
 
 /*
@@ -721,7 +735,7 @@ HALAMAN INDEX end
 */
 .element-show {
   opacity: 1;
-  display: inline;
+
   transform: translate(0, 0);
 
 }
@@ -820,6 +834,7 @@ HALAMAN INDEX end
 
   .brand-imgs {
     padding: 0 auto;
+    padding-right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -837,6 +852,12 @@ HALAMAN INDEX end
 
   .tombol-branding {
     margin: 5px 5px;
+  }
+
+  .brand-imgs {
+
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -864,6 +885,10 @@ HALAMAN INDEX end
 
   .rectangle {
     display: none;
+  }
+
+  .cards {
+    margin: 0 10px;
   }
 
   /* tentang kami */
