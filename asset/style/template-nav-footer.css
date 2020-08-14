@@ -13,8 +13,99 @@ nav {
   margin: 0px 13px;
 }
 
-.nav-item a:hover {
+/* animasi hover nav */
+.nav-item a {
+  position: relative;
+  text-transform: capitalize;
+  transition: all .3s ease;
+  vertical-align: middle
+}
+
+.dropdown-item:hover,
+.nav-link:hover {
   color: #4cc2c0;
+}
+
+.nav-item a:before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
+  border-top: 3px solid;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  opacity: 0;
+  transition: all .3s linear;
+}
+
+.nav-item a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15%;
+  height: 2px;
+  border-top: 3px solid;
+  left: 0;
+  bottom: -10px;
+  opacity: 0;
+  transition: all .3s linear
+}
+
+.navbar-nav>li:hover>a:after,
+.navbar-nav>li:hover>a:before {
+  opacity: 1
+}
+
+.dropdown-item,
+.nav-link {
+  width: 90%;
+  padding: 12px 20px;
+  display: block;
+
+}
+
+.nav-item a:before,
+.nav-item a:after {
+  border-top-color: #4cc2c0;
+}
+
+.navbar-nav>li:hover>a:after {
+  width: 15%;
+  animation: primary-short .5s linear
+}
+
+@keyframes primary-short {
+  0% {
+    width: 0
+  }
+
+  50% {
+    width: 40%
+  }
+
+  100% {
+    width: 15%
+  }
+}
+
+.navbar-nav>li:hover>a:before {
+  width: 80%;
+  animation: primary-long .5s linear
+}
+
+@keyframes primary-long {
+  0% {
+    width: 100%
+  }
+
+  50% {
+    width: 55%
+  }
+
+  100% {
+    width: 80%
+  }
 }
 
 .telp {
@@ -22,7 +113,8 @@ nav {
   color: #5d5d5d;
 }
 
-.nav-hide {
+/* animasi swing nav */
+/* .nav-hide {
   animation-duration: 1s;
   -webkit-transform-origin: top;
   animation-name: swingOutX;
@@ -148,7 +240,7 @@ nav {
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
   will-change: transform, opacity
-}
+} */
 
 @media (max-width: 1200px) {
   .nav-logo {
