@@ -36,6 +36,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-size: 75%;
+  background-repeat: no-repeat;
 }
 
 .carousel-img {
@@ -44,13 +48,7 @@ a {
   height: 465px;
 }
 
-.satu {
-  background-image: url("../img/mobil.png");
-  background-position: center;
-  background-size: cover;
-  background-size: 75%;
-  background-repeat: no-repeat;
-}
+
 
 .dua {
   background-color: coral;
@@ -62,8 +60,14 @@ a {
   height: 47px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 15px;
+  z-index: 3;
   position: absolute;
-  top: 810px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 870px;
 }
 
 .rectangle p {
@@ -75,6 +79,7 @@ a {
   padding-top: 10px;
 }
 
+/* 
 .polygon {
   width: 0;
   height: 0;
@@ -88,7 +93,7 @@ a {
   -moz-animation: bounce 1s infinite;
   -webkit-animation: bounce 1s infinite;
   animation: bounce 1s infinite;
-}
+} */
 
 @keyframes bounce {
 
@@ -516,14 +521,14 @@ HALAMAN INDEX end
 }
 
 /* portfilio img */
-.portfolio-img {
+.portfolio-item img {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 328px;
   height: 234px;
   border-radius: 15px;
-  opacity: 0;
-  transform: translate(0, 60px);
+  background: #0a9ad3 0% 0% no-repeat padding-box;
+
   transition: 0.7s;
 }
 
@@ -684,6 +689,7 @@ HALAMAN INDEX end
   font-weight: 900;
   color: #000000;
   float: right;
+
 }
 
 .accordion-section .panel-default .panel-title a.collapsed:after {
@@ -735,7 +741,6 @@ HALAMAN INDEX end
 */
 .element-show {
   opacity: 1;
-
   transform: translate(0, 0);
 
 }
@@ -1035,7 +1040,11 @@ HALAMAN INDEX end
 .portfolio-item:hover .portfolio-info {
   opacity: 1;
   transform: translate(0, 0);
-  bottom: 0px;
+  bottom: 20px;
   left: 0px;
   right: 0px;
+}
+
+.portfolio-wraper {
+  margin: 0 auto;
 }

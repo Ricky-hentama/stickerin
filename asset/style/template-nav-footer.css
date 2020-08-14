@@ -13,6 +13,10 @@ nav {
   margin: 0px 13px;
 }
 
+.nav-item a:hover {
+  color: #4cc2c0;
+}
+
 .telp {
   margin-left: 40px;
   color: #5d5d5d;
@@ -205,6 +209,10 @@ footer a {
   opacity: 1;
 }
 
+.list-group-item img {
+  width: 22px;
+}
+
 @media (max-width: 1090px) {
   footer h5 {
     font-size: 18px;
@@ -251,6 +259,12 @@ footer a {
 
   footer a {
     text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .isi-footer {
+    padding-left: 15%;
   }
 }
 
