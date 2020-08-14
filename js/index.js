@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  // hide icon chat
+  $crisp.push(['do', 'chat:hide']);
+  // show when buton clicked
+  $(".chat-admin").click(function () {
+    $crisp.push(['do', 'chat:show']);
+    $crisp.push(['do', 'chat:open']);
+  })
+
+  $(".wws-popup__close-btn").click(function () {
+    $crisp.push(['do', 'chat:close']);
+    $crisp.push(['do', 'chat:hide']);
+  })
+
+
+
   // redirect to section1
   $(".rectangle").click(function () {
     window.location.href = "index.html#branding";
@@ -46,8 +61,7 @@ $(document).ready(function () {
   const arrow = $(".polygon");
 
   arrow.animate(
-    [
-      {
+    [{
         top: "0",
       },
       {
@@ -56,8 +70,7 @@ $(document).ready(function () {
       {
         tops: "0",
       },
-    ],
-    {
+    ], {
       duration: 700,
       iterations: Infinity,
     }

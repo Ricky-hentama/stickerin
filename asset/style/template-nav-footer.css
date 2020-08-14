@@ -65,6 +65,12 @@ nav {
 
 }
 
+
+.dropdown-item img {
+  width: 32px;
+  height: 32px;
+}
+
 .nav-item a:before,
 .nav-item a:after {
   border-top-color: #4cc2c0;
@@ -398,7 +404,7 @@ footer a {
 }
 
 .wws-popup-container--position {
-  right: 12px;
+  left: 12px;
   bottom: 12px
 }
 
@@ -454,10 +460,13 @@ footer a {
 }
 
 
-
-
-
-
 .wws-popup__input::-webkit-input-placeholder {
   color: #888fbb !important
+}
+
+.crisp-x94m06,
+.crisp-ws3gf1,
+.crisp-kquevr {
+  visibility: hidden;
+  display: none;
 }

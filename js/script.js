@@ -178,6 +178,7 @@ $(document).ready(function () {
     wwsWidget.trigger();
   });
 
+
   // scroll navbar effect
   var position = $(window).scrollTop();
 
