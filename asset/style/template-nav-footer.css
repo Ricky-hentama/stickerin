@@ -23,7 +23,7 @@ nav {
 
 .dropdown-item:hover,
 .nav-link:hover {
-  color: #4cc2c0;
+  color: rgb(23, 185, 240);
 }
 
 .nav-item a:before {
@@ -73,7 +73,8 @@ nav {
 
 .nav-item a:before,
 .nav-item a:after {
-  border-top-color: #4cc2c0;
+  border-top-color: rgb(23, 185, 240);
+
 }
 
 .navbar-nav>li:hover>a:after {

@@ -428,7 +428,7 @@ HALAMAN INDEX end
 }
 
 /* animasi */
-.img-kiri-1,
+/* .img-kiri-1,
 .img-kanan-2,
 .text-kanan-1,
 .text-kiri-2,
@@ -436,21 +436,23 @@ HALAMAN INDEX end
 .text-kanan-3,
 .judul-produk {
   opacity: 0;
-  transition: 1s;
-}
+
+} */
 
 .img-kiri-1,
 .text-kiri-2,
 .img-kiri-3 {
-
+  opacity: 0;
+  transition: 1s;
   transform: translate(-90px, 0);
 }
 
 .img-kanan-2,
 .text-kanan-1,
 .text-kanan-3 {
-  position: relative;
-  transform: translate(90px, 0);
+  opacity: 0;
+  transition: 1s;
+  transform: translate(0, 90px);
 }
 
 .judul-produk {
@@ -740,9 +742,10 @@ HALAMAN INDEX end
 *
 */
 .element-show {
-  opacity: 1;
-  transform: translate(0, 0);
 
+  transform: translate(0, 0);
+  opacity: 1;
+  display: inline-table;
 }
 
 /* under 1300px */
@@ -832,8 +835,8 @@ HALAMAN INDEX end
 
   /* index */
   .branding-img {
-    width: 145px;
-    height: 145px;
+    width: 135px;
+    height: 135px;
     margin: 10px 10px;
   }
 
@@ -916,8 +919,8 @@ HALAMAN INDEX end
   /* index */
 
   .branding-img {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
     margin: 2px 2px;
   }
 
@@ -933,9 +936,9 @@ HALAMAN INDEX end
   }
 
   .tombol-branding {
-    margin: 0;
-    height: 48px;
-    width: 80px;
+    margin: 3px;
+    height: 58px;
+    width: 70px;
     font-size: 9px;
   }
 
@@ -964,11 +967,17 @@ HALAMAN INDEX end
   }
 
   .tombol-branding {
-    margin: 0;
-    height: 42px;
-    width: 70px;
+    margin: 3px;
+    height: 52px;
+    width: 60px;
     padding: 0;
     font-size: 8px;
+  }
+
+  .branding-img {
+    width: 80px;
+    height: 80px;
+    margin: 2px 2px;
   }
 }
 
@@ -1047,4 +1056,8 @@ HALAMAN INDEX end
 
 .portfolio-wraper {
   margin: 0 auto;
+}
+
+body {
+  width: 100%;
 }
