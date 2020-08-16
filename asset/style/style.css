@@ -79,7 +79,7 @@ a {
   padding-top: 10px;
 }
 
-/* 
+
 .polygon {
   width: 0;
   height: 0;
@@ -93,7 +93,7 @@ a {
   -moz-animation: bounce 1s infinite;
   -webkit-animation: bounce 1s infinite;
   animation: bounce 1s infinite;
-} */
+}
 
 @keyframes bounce {
 
