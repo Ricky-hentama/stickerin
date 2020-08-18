@@ -11,6 +11,44 @@ $(document).ready(function () {
   $(".panel-heading").mouseleave(function () {
     $(this).children([".collapsed"]).css("font-weight", "normal");
   });
+  // faq hide & show
+  // branding section
+
+  $(".tombol-branding").click(function (e) {
+    $(this).addClass("tombol-active").siblings().removeClass("tombol-active");
+
+    if (e.target.dataset.target == " faq-all") {
+      $(".faq-all")
+        .addClass("faq-show")
+        .siblings()
+        .removeClass("faq-show");
+    }
+    if (e.target.dataset.target == "branding-mobil") {
+      $(".faq-branding-mobil")
+        .addClass("faq-show")
+        .siblings()
+        .removeClass("faq-show");
+    }
+    if (e.target.dataset.target == "branding-kantor") {
+      $(".faq-branding-kantor")
+        .addClass("faq-show")
+        .siblings()
+        .removeClass("faq-show");
+    }
+    if (e.target.dataset.target == "cetak-sticker") {
+      $(".faq-cetak-sticker")
+        .addClass("faq-show")
+        .siblings()
+        .removeClass("faq-show");
+    }
+    if (e.target.dataset.target == "cutting-sticker") {
+      $(".faq-cutting-sticker")
+        .addClass("faq-show")
+        .siblings()
+        .removeClass("faq-show");
+    }
+  });
+
   // kontak spiner
   $("#loadspin").hide();
   // trigger disable button

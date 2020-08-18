@@ -732,8 +732,18 @@ HALAMAN INDEX end
   background-position: center;
   position: sticky;
 
+}
 
+.faq-all,
+.faq-branding-mobil,
+.faq-branding-kantor,
+.faq-cetak-sticker,
+.faq-cutting-sticker {
+  display: none;
+}
 
+.faq-show {
+  display: block;
 }
 
 /*
