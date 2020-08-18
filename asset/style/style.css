@@ -41,7 +41,7 @@ a {
 }
 
 .slide-item img {
-  max-height: 800px
+  max-height: 50%;
 }
 
 .carousel-img {
@@ -69,7 +69,7 @@ a {
   left: 0;
   right: 0;
   text-align: center;
-  top: 870px;
+
 }
 
 .rectangle p {
@@ -882,6 +882,10 @@ HALAMAN INDEX end
     padding-right: 5px;
   }
 
+  .branding-img {
+    margin: 0 auto;
+  }
+
 }
 
 /* under 560px */
@@ -910,8 +914,9 @@ HALAMAN INDEX end
   .branding-img {
     width: 105px;
     height: 105px;
-    margin: 2px 2px;
+
   }
+
 
   .brand-imgs {
     padding: 0px auto;
@@ -944,7 +949,7 @@ HALAMAN INDEX end
   .branding-img {
     width: 85px;
     height: 85px;
-    margin: 2px 2px;
+
   }
 
   .brand-imgs {
@@ -1003,9 +1008,11 @@ HALAMAN INDEX end
   .branding-img {
     width: 75px;
     height: 75px;
-    margin: 2px 2px;
+
   }
 }
+
+
 
 /* upper 1200 */
 @media (min-width: 1000px) {
@@ -1019,9 +1026,7 @@ HALAMAN INDEX end
 }
 
 @media (min-width: 991px) {
-  /* .slide-item img {
-    max-height: 600px;
-  } */
+
 
   .text-kanan,
   .text-kiri {

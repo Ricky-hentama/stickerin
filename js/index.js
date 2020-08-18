@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  // carousel
+  $(window).resize(function () {
+    // This will execute whenever the window is resized
+    let lebar = $(window).width(); // New width
+    let tinggi = (lebar / 100) * 65;
+    var tinggiRec = (lebar / 100) * 63;
+    jQuery(".slide-item img").css("height", tinggi);
+    jQuery(".rectangle").css("top", tinggiRec);
+
+  });
+  $(window).on("load", function () {
+    // This will execute whenever the window is resized
+    let lebar = $(window).width(); // New width
+    let tinggi = (lebar / 100) * 65;
+    var tinggiRec = (lebar / 100) * 62;
+    jQuery(".slide-item img").css("height", tinggi);
+    jQuery(".rectangle").css("top", tinggiRec);
+  });
   // hide icon chat
   $crisp.push(['do', 'chat:hide']);
   // show when buton clicked
