@@ -19,6 +19,11 @@
       });
     });
 
+    $(".portfolio-item").each(function (i) {
+      setTimeout(function () {
+        $(".portfolio-item").eq(i).addClass("element-show");
+      }, 200 * (i + 1));
+    });
     // Initiate venobox (lightbox feature used in portofilo)
 
   });

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // tombol branding
   $(".tombol-branding").click(function () {
     $(this).addClass("tombol-active").siblings().removeClass("tombol-active");
@@ -11,7 +12,7 @@ $(document).ready(function () {
   $(".panel-heading").mouseleave(function () {
     $(this).children([".collapsed"]).css("font-weight", "normal");
   });
-  // faq hide & show
+
   // branding section
 
   $(".tombol-branding").click(function (e) {
@@ -105,7 +106,8 @@ $(document).ready(function () {
     }
   });
   // halaman aboutme section 1
-  $(window).on("load", function () {
+  $(window).on("load", function (e) {
+    console.log(e.target.body)
     $(".img-kiri-1").addClass("element-show");
     $(".text-kanan-1").addClass("element-show");
     $(".judul-produk").addClass("element-show");
