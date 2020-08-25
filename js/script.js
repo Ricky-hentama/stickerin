@@ -64,7 +64,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let wScroll = $(this).scrollTop();
     //under 200
-    if (wScroll > 200) {
+    if (wScroll > 700) {
       // branding img
       $(".branding-img").each(function (i) {
         setTimeout(function () {
@@ -98,7 +98,7 @@ $(document).ready(function () {
       $(".img-kiri-3").addClass("element-show");
     }
     // under 950
-    if (wScroll > 950) {
+    if (wScroll > 1250) {
       // judul last project
       $(".judul-last-project").addClass("element-show");
       //deskripsi
