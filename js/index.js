@@ -3,8 +3,8 @@ $(document).ready(function () {
   $(window).resize(function () {
     // This will execute whenever the window is resized
     let lebar = $(window).width(); // New width
-    let tinggi = (lebar / 100) * 65;
-    var tinggiRec = (lebar / 100) * 63;
+    let tinggi = (lebar / 100) * 42;
+    var tinggiRec = (lebar / 100) * 40;
     jQuery(".slide-item img").css("height", tinggi);
     jQuery(".rectangle").css("top", tinggiRec);
 
@@ -12,10 +12,11 @@ $(document).ready(function () {
   $(window).on("load", function () {
     // This will execute whenever the window is resized
     let lebar = $(window).width(); // New width
-    let tinggi = (lebar / 100) * 65;
-    var tinggiRec = (lebar / 100) * 62;
+    let tinggi = (lebar / 100) * 42;
+    var tinggiRec = (lebar / 100) * 40;
     jQuery(".slide-item img").css("height", tinggi);
     jQuery(".rectangle").css("top", tinggiRec);
+    console.log(lebar)
   });
   // hide icon chat
   $crisp.push(['do', 'chat:hide']);

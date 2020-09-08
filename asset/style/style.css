@@ -681,6 +681,18 @@ HALAMAN INDEX end
 
 /* HALAMAN  FAQ */
 
+.note-editor .note-editing-area .note-editable img.note-float-left {
+  margin-right: 10px;
+}
+
+.note-editor .note-editing-area .note-editable img.note-float-right {
+  margin-left: 10px;
+}
+
+.note-video-clip {
+  margin: 0 10px;
+}
+
 .accordion-section .panel-default>.panel-heading {
   border-radius: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -729,6 +741,7 @@ HALAMAN INDEX end
   letter-spacing: 1px;
   color: #5d5d5d;
   opacity: 1;
+
 }
 
 .faq-img {
@@ -742,7 +755,6 @@ HALAMAN INDEX end
   background-size: cover;
   background-position: center;
   position: sticky;
-
 }
 
 .faq-all,
